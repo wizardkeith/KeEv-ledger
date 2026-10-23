@@ -1,0 +1,45 @@
+name: Restore exact font during initial source import
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.sync-import/NotoSansSC.ttf.xz'
+      - '.github/workflows/font-import.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: github.repository == 'wizardkeith/KeEv-ledger' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore and verify the original font bytes
+        shell: python
+        run: |
+          import hashlib
+          import lzma
+          from pathlib import Path
+          packed = Path('.sync-import/NotoSansSC.ttf.xz').read_bytes()
+          assert hashlib.sha256(packed).hexdigest() == '2b63f5d33f98b8f359c6eaec386d74e74ca11af87b640095d5b148cc84d1817b'
+          data = lzma.decompress(packed)
+          assert len(data) == 17772300
+          assert hashlib.sha256(data).hexdigest() == 'a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da'
+          assert hashlib.sha1(b'blob 17772300\0' + data).hexdigest() == 'fb0637bafbcd804fe32152370a1225990745b4bc'
+          target = Path('assets/fonts/NotoSansSC.ttf')
+          assert not target.exists(), 'Initial import must not overwrite an existing font'
+          target.parent.mkdir(parents=True, exist_ok=True)
+          target.write_bytes(data)
+      - name: Commit the verified original font
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/fonts/NotoSansSC.ttf
+          git commit -m 'Restore verified original Noto Sans SC font for source import'
+          git push origin HEAD:refs/heads/main
