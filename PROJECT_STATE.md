@@ -1,6 +1,6 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T01:22:21+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-24T01:32:07+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
@@ -51,5 +51,23 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - Existing authorized environment successfully read/cloned this repository without new credentials or permission expansion. Normal documentation push and remote readback are the handoff actions; these do not establish a dedicated Cloud environment, local desktop access or continuous synchronization.
 - The retained CI run 39988480789 failed the format gate (21 files); analyze/test/Android were skipped. The 322-test/native RC results remain historical. No formatter, Flutter tests/build, Phase 12, signing, purchases, ads or release action was run. The existing push-triggered workflow may run for this documentation commit; no outcome for that new run is claimed. Native toolchain and physical-device readiness were not tested.
 - Validation for this task: repository/working-state inspection, documentation-only diff and whitespace checks, remote recheck and post-push SHA readback. No application tests were rerun. No application, asset or workflow modifications.
-- No local uncommitted source work was present; work on other machines is unknown. Parent independently cross-checking this checkpoint's SHA and Asia/Hong_Kong timestamp remains pending; do not claim agreement before that read.
-- Next: finish that independent cross-check and continue only the owner's explicit next task. Existing release/editor limitations above remain in force.
+- No local uncommitted source work was present; work on other machines is unknown. The previously pending independent SHA/timestamp cross-check is completed for the checkpoint in the closing receipt below.
+- Next: continue only the owner's explicit next task; see the completed independent cross-check below. Existing release/editor limitations above remain in force.
+
+## Closing cross-environment receipt — 2026-10-24T01:32:07+08:00
+
+- Original verified checkpoint timestamp: **2026-10-24T01:22:21+08:00** (Asia/Hong_Kong). Receipt recorded in this documentation update at **2026-10-24T01:32:07+08:00** (Asia/Hong_Kong); the original timestamp is not the time of the later local inspection.
+- Parent reports that local executor task `01a169ca-b43d-74e3-882f-f4985f05b00f` independently read remote `main` and SHA-pinned `PROJECT_STATE.md` for all three projects. The parent connector independently confirmed the same values. The agreed checkpoints are:
+
+| Project | Independently matched main SHA | Matched progress timestamp |
+| --- | --- | --- |
+| KeEv-games | `36caa1dd664b13aa0c51e179d6382021c1eb8483` | `2026-10-24T01:22:21+08:00` |
+| KeEv-ledger | `898611d657aa5e6fece25d7768d42b24ea6a382d` | `2026-10-24T01:22:21+08:00` |
+| KeEv-website | `ac759aed1716850e67446af81010ca027ba73bbe` | `2026-10-24T01:22:21+08:00` |
+
+- This repository's matched checkpoint is `898611d657aa5e6fece25d7768d42b24ea6a382d`. The previous pending cross-environment comparison is **complete for those exact commits**. This closing documentation successor will have a different SHA, supplied for final parent readback; it is not falsely described as already independently cross-checked.
+- Local connection is now authorized and read-only Git/network access succeeded. These are access observations, distinct from local repository availability, installed toolchains, native Editor access or device acceptance. The local task made no file/settings changes and ran no builds or tests.
+- The registered local Ledger folder exists but is unborn `master`, with no commits or remote. It is not a checkout of canonical GitHub main. Remote read access does not establish a ready local Flutter/Android/iOS toolchain or buildable checkout; those remain unverified.
+- Local live-task listing did not return and was stopped; live task state remains unverified. The local findings are attributed to the parent-provided executor receipt, not a fresh inspection from this cloud checkout. Absolute personal paths are intentionally omitted.
+- This closing update changes only `PROJECT_STATE.md`. Documentation diff/whitespace checks and normal remote push/readback are performed; no application code, assets, builds/tests, Site/Wix publication, settings or local Unity work are changed. Prior product, acceptance and release limitations remain in force.
+- Next: parent reads back this closing documentation SHA and current update time; future application work follows the owner's explicit task and must preserve unsynchronized local work.
