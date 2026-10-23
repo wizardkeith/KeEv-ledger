@@ -1,0 +1,88 @@
+{
+  "purpose": "characterization, not correctness approval",
+  "node": "v24.19.0",
+  "results": [
+    {
+      "id": "C01",
+      "status": "REPRODUCED",
+      "meaning": "Same-currency transfer is excluded from income/expense",
+      "observation": "preservable behaviour"
+    },
+    {
+      "id": "C02",
+      "status": "REPRODUCED",
+      "meaning": "Cross-currency transfer applies HKD numeral unchanged to USD",
+      "observation": {
+        "observedUsd": 780,
+        "desiredUsdForExample": 100
+      }
+    },
+    {
+      "id": "C03",
+      "status": "REPRODUCED",
+      "meaning": "Archiving funded account removes it from net worth",
+      "observation": "100 → 0 without spending"
+    },
+    {
+      "id": "C04",
+      "status": "REPRODUCED",
+      "meaning": "Absent exchange rate silently returns original amount",
+      "observation": 100
+    },
+    {
+      "id": "C05",
+      "status": "REPRODUCED",
+      "meaning": "Cantonese numeral 八十五 not parsed as amount",
+      "observation": {
+        "type": "expense",
+        "category": "food",
+        "note": "今日午餐八十五蚊"
+      }
+    },
+    {
+      "id": "C06",
+      "status": "REPRODUCED",
+      "meaning": "Unknown backup version accepted",
+      "observation": "version 999 accepted"
+    },
+    {
+      "id": "C07",
+      "status": "REPRODUCED",
+      "meaning": "Prototype privilege helper overrides unpaid state",
+      "observation": "both unlocked"
+    },
+    {
+      "id": "C08",
+      "status": "REPRODUCED",
+      "meaning": "Hard-deleted remote row resurrects from stale local copy",
+      "observation": "local-only copy retained"
+    },
+    {
+      "id": "C09",
+      "status": "REPRODUCED",
+      "meaning": "Queue clear after snapshot loses later operation",
+      "observation": "t2 removed without acknowledgement"
+    },
+    {
+      "id": "C10",
+      "status": "REPRODUCED",
+      "meaning": "Category CSV adds different currencies nominally",
+      "observation": "HKD 10 + JPY 10 → 20.00"
+    },
+    {
+      "id": "C11",
+      "status": "REPRODUCED",
+      "meaning": "Credit card payment reduces debt and does not add expense",
+      "observation": "preservable behaviour"
+    },
+    {
+      "id": "C12",
+      "status": "REPRODUCED",
+      "meaning": "Range CSV misses pre-range balance",
+      "observation": {
+        "correctBalance": 70,
+        "rangeCsvBalance": 90
+      }
+    }
+  ]
+}

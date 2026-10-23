@@ -1,0 +1,35 @@
+Command: /tmp/keev-flutter-sdk/bin/cache/dart-sdk/bin/dart --packages=/tmp/keev-flutter-sdk/packages/flutter_tools/.dart_tool/package_config.json /tmp/keev-flutter-sdk/packages/flutter_tools/bin/flutter_tools.dart doctor -v
+Clean allowlisted environment; analytics disabled.
+
+[1/1] Engine Information                                            23ms
+[1/1] Engine Information                                            11ms
+Failed to download https://storage.googleapis.com/flutter_infra_release/flutter/af7e796e161ae0bb1ff0758c71a7105418bd9ded/engine_stamp.json. Ensure you have network connectivity and then try again.
+SocketException: Failed host lookup: 'storage.googleapis.com' (OS Error: Temporary failure in name resolution, errno = -3)
+
+#0      throwToolExit (package:flutter_tools/src/base/common.dart:34:3)
+#1      ArtifactUpdater._downloadArchive (package:flutter_tools/src/cache.dart:1280:11)
+<asynchronous suspension>
+#2      FlutterEngineStamp.updateInner (package:flutter_tools/src/flutter_cache.dart:219:5)
+<asynchronous suspension>
+#3      CachedArtifact.update (package:flutter_tools/src/cache.dart:959:5)
+<asynchronous suspension>
+#4      Cache.updateAll (package:flutter_tools/src/cache.dart:818:9)
+<asynchronous suspension>
+#5      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:447:9)
+<asynchronous suspension>
+#6      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#7      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:431:5)
+<asynchronous suspension>
+#8      FlutterCommandRunner.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:307:33)
+<asynchronous suspension>
+#9      run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:104:11)
+<asynchronous suspension>
+#10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#11     main (package:flutter_tools/executable.dart:103:3)
+<asynchronous suspension>
+
+
+
+Exit code: 1

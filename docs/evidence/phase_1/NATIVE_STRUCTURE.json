@@ -1,0 +1,8 @@
+{
+  "flutter_activity": true,
+  "ios_plist_xml": true,
+  "flavor_schemes": 3,
+  "configurations_per_mode": 3,
+  "no_prohibited_dependencies": true,
+  "native_compilation": "NOT VERIFIED"
+}

@@ -1,0 +1,1 @@
+INFO: ledger_database: Creating schema file for version 1

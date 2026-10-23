@@ -1,0 +1,5 @@
+#include "Generated.xcconfig"
+CODE_SIGN_ENTITLEMENTS=Runner/Runner.entitlements
+// Official Google sample App ID. Owner release configuration overrides this.
+ADMOB_APP_ID=ca-app-pub-3940256099942544~1458002511
+CODE_SIGN_ENTITLEMENTS=Runner/Runner.entitlements

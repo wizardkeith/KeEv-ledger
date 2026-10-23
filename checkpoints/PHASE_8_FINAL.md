@@ -1,0 +1,9 @@
+# Phase 8 — final repository architecture
+
+**PASS — REPOSITORY IMPLEMENTATION COMPLETE.** Live Edge, stores, native builds and owner release acceptance remain required. Checkout defaults disabled.
+
+- Phase 7: UMP/ATT-gated restrained banners; verified `adFree` immediately suppresses ads. Local Only/core bookkeeping stays free.
+- Client: official `in_app_purchase: 3.3.1`, StoreKit/Play product catalogue and localized store prices; one early purchase stream, encrypted pending journal, account-bound purchase/restore, idempotent server verification and bounded verified cache. Client purchase callbacks never mint Premium. Apple StoreKit finish follows trusted processing; Google acknowledgement belongs to backend.
+- Trusted Supabase backend: private store identities/token and audit, immutable account binding, RLS own-user sanitized entitlement, Apple official root-anchored signed transaction/renewal and current Server API state, Google subscriptionsv2.get, product/base-plan/environment checks, durable entitlement-before-Play-ack order. Multi-source effective `premium`/`adFree` derives under per-account locking and source observation ordering.
+- Lifecycle: Apple Notifications V2 outer/nested JWS and authenticated Google Pub/Sub OIDC RTDN are deduplicated private signals. Their arrival order/type never sets entitlement; both query current store state through shared adapters. Bounded server-only hourly reconciliation repairs missed notifications and pending acknowledgements.
+- Release: `PURCHASES_ENABLED=false` by default; owner supplies product IDs, secrets, URLs, native store configuration and enables only after staging SQL, live Apple/Google Sandbox/internal tests, Deno Edge runtime validation, native builds and privacy/legal review. Account deletion is separate from store subscription cancellation. Ledger sync and `.keevbackup` exclude billing state.

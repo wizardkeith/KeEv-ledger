@@ -1,0 +1,13 @@
+# Phase 3B reports and CSV
+
+Reports use inclusive `yyyy-MM-dd` business-date ranges; technical timestamps never determine inclusion. `ReportQuery` supports profile, reporting currency and optional account/category/project filters. The immediately preceding comparison range has the same inclusive day count. Percentage change is unavailable when the prior period has no activity, its value is zero, or either period is incomplete. Daily trend rows are the accessible text alternative; no chart package is used.
+
+Income/Expense/Net includes active income and expense entries only. Transfers, including credit-card payments, are excluded; the original card purchase remains an expense. Tombstoned entries are excluded by the repository. Category/account breakdowns, screen totals, trend and CSV all consume the same `IncomeExpenseReport` result.
+
+Assets & Liabilities is a consumer as-of overview, not a professional financial statement. For each account opened on or before the inclusive as-of date: opening balance + income − expense − outgoing sent Money + incoming received Money. Future events are excluded and archived accounts remain included. Cash/bank/e-wallet/other balances form assets. Credit-card balance uses the existing convention (debt is negative); liabilities are its sign-reversed reporting-currency amount. Net is assets minus liabilities.
+
+`RecordedFxConverter` is shared with Budgets/Projects. Same-currency values and exact zero require no rate. Otherwise only a unique exact same-business-date transfer-implied rate is accepted and HALF-EVEN rounding remains authoritative. Missing or conflicting rates preserve the known subtotal and return explicit issue/provenance data; there is no nominal summation, 1:1 fallback, live FX or silent omission.
+
+`CsvReportExporter` creates UTF-8 Dart strings with CRLF records, quotes every field, doubles embedded quotes, and preserves commas/newlines/Unicode. User-controlled text whose first non-space character is `=`, `+`, `-` or `@` is prefixed with an apostrophe to neutralize spreadsheet formulas. Exact financial decimal cells are generated from integer minor units and are not text-sanitized. Incomplete FX status and issue rows are exported.
+
+CSV generation is local and user initiated. `CsvExportDocument` plus `LocalCsvExportGateway` is the native file/share boundary; this Linux environment cannot verify Android/iOS share sheets, so no unverified plugin or fake successful share implementation was added. The Reports screen provides a local selectable CSV preview. A maintained native gateway may implement save/share later without changing report calculations. PDF, XLSX, live FX, forecasting, billing/entitlement purchase flow and advanced visual charts remain deferred.

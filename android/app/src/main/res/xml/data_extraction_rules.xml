@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <!-- Device secrets and the unencrypted local ledger must not migrate as
+         an uncoordinated OS backup. KeEv has an explicit encrypted export. -->
+    <cloud-backup><exclude domain="root" path="." /></cloud-backup>
+    <device-transfer><exclude domain="root" path="." /></device-transfer>
+</data-extraction-rules>

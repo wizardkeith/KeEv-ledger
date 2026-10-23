@@ -1,0 +1,2264 @@
+[
+  {
+    "path": ".grok/app-env.json",
+    "bytes": 2,
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/references/browser-qa.md",
+    "bytes": 2173,
+    "sha256": "a6818072d81646a74e2f515b3a0b6415966da3db61e4f82c50996c19d77b86b4",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/references/data-and-auth.md",
+    "bytes": 3999,
+    "sha256": "0106dc3387224525e73fffa1e6d73ec5445237070863da87e3efb93f69414861",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/references/deploy-target.md",
+    "bytes": 2103,
+    "sha256": "1cf4299e7a7b58ed937baf9441930011e98360010f7c3d3af5d806ea9486711a",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/references/generated-art.md",
+    "bytes": 3854,
+    "sha256": "7485ecf0311612b97c0e3c24fbfac6bd118b1c82429a3ed2f272214fe6a6d994",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/references/hibernate-revive.md",
+    "bytes": 1597,
+    "sha256": "de00ad8b9d269e406b15ea45d46c93bfc9ba0e1f8511c12236ed5442eef20dbc",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/references/scaffold.md",
+    "bytes": 2282,
+    "sha256": "693195c814efb89dbafd1b6db716b6d2ae002f6ccef89605e85ec0e75e88d481",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/auth/SKILL.md",
+    "bytes": 6337,
+    "sha256": "8ef007a02a845273a54144a1284c97a42b7b3215f54b4555cac38acf09105198",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/auth/references/per-user-data.md",
+    "bytes": 2402,
+    "sha256": "8538db1b761d2dce033e751eb7513e5d1012998b9d7599f8d1725e3b90830298",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/auth/references/prewired-and-env.md",
+    "bytes": 3392,
+    "sha256": "de580b328cc403f6b6d5638764c8f42fa6f17d461969f95eaed913c0a6ddabe5",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/auth/references/session-ui.md",
+    "bytes": 4821,
+    "sha256": "84c73bfd3f6076cf3ec3bd8d55fbce16f703e0dbe50d7342161c29c941f60e75",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/auth/references/sign-in-methods.md",
+    "bytes": 2892,
+    "sha256": "f768048704e997511b46d9f8162bad5bf3faf749977f5fb014c9325e738c0277",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/auth/references/wiring.md",
+    "bytes": 2627,
+    "sha256": "75d840d1eedb9ce17fbb3ffd10a09ac9ac90a469f9f185338b14b8079fbb407c",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/SKILL.md",
+    "bytes": 12224,
+    "sha256": "429fd21e70581ec0316bc0e09ae6f6b5b15d325070e36d388b9396b4831c7845",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/3d-libs.md",
+    "bytes": 3092,
+    "sha256": "db472820a65a16e4928a68a50fd31885b945ec2f9fa45a17a8152a0d48cf12bf",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/ai-pathfinding.md",
+    "bytes": 9974,
+    "sha256": "e815831ca67d68e4bc7a649f63ae129abdd3d996040b2c446c2c574e72c8424b",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/audio.md",
+    "bytes": 9423,
+    "sha256": "1de8c85a9fd6cb9594e11b6b1da7e54cdca8de512c0778eb35959f8f0fbe210c",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/babylon.md",
+    "bytes": 16504,
+    "sha256": "065934f53c6c8a1d5fd27a98f1311df2b4f2f194eb694355a98cc3c802a3ebd6",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/collision-physics.md",
+    "bytes": 10990,
+    "sha256": "af213fa9079d38742fc4d95a9c6a34907b85fb039e6c8cdb058dcbf5c7bd8672",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/ecs-architecture.md",
+    "bytes": 9185,
+    "sha256": "6b0de85d73be9725c3989136c968b85ceec70c333cc0ef9993e58aff0f1b0d5f",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/game-feel-juice.md",
+    "bytes": 10693,
+    "sha256": "24742ba2d5455f10c85c06ae279c636921f983a696b844a7f2505b988a5bef83",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/board-card-chess.md",
+    "bytes": 8859,
+    "sha256": "c2103f928e917c02729f00696165426ba106d9f235948347147d73ac53a50d65",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/endless-runner.md",
+    "bytes": 6912,
+    "sha256": "2c0026ab6e57f6b025fbe3673aab24f7dff0fb70fb89f1b047486f1346049a54",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/fps.md",
+    "bytes": 10039,
+    "sha256": "a3df7b29b964c3850e01d10fd4df131d3488f9064acac49ddc34386ec13d1ca2",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/platformer-2d.md",
+    "bytes": 8785,
+    "sha256": "2262c7c914409746971a9b1eef445b026011260ddb5a39af2f3904fc44ef8104",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/puzzle-match3-tetris.md",
+    "bytes": 10324,
+    "sha256": "1011844cbe7d65184ecbc541ad0f3060b04ee22197d6b6bc22fa671b2329ed47",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/racing-kart.md",
+    "bytes": 9169,
+    "sha256": "2afc99aadd556321973c8ae3ef2f8270dd5bb7bb8ad896abcac27c9a7221e0ff",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/topdown-twin-stick.md",
+    "bytes": 7517,
+    "sha256": "f1dfeca4990b1fc37a49ca82f1246f5564a4fae24dfc3ac8b1d01f95aab43da6",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/tower-defense.md",
+    "bytes": 7411,
+    "sha256": "a52c28421da0d3710c21fa19421a172b0bc75add64b5dee35abd3b8299add76a",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/genres/voxel-minecraft.md",
+    "bytes": 8658,
+    "sha256": "cdd5746e5496945694fd8e8d0fed9cf0314d4fae6dc107cfdf44a0824fdebdc6",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/input.md",
+    "bytes": 10311,
+    "sha256": "00e030e3a28118bfc9d2f6a633b9d56cc31f60d015181b668dcd09914d15f8ce",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/phaser.md",
+    "bytes": 19739,
+    "sha256": "08abc9cb20cfe356e3376f216aef6a62df72e654f542c7770ab69f2cdfc17b2a",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/procedural-generation.md",
+    "bytes": 10441,
+    "sha256": "f03bd0390726bc7f823ad15f9309aef5317aa7f27fb7611e6648ec3fa0ca7ace",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/save-persistence.md",
+    "bytes": 9041,
+    "sha256": "6751d65f6b0dc76e19be0827286a1753efc8161a3f66a080c8e23999ef5063a4",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/building-games/references/threejs-foundational.md",
+    "bytes": 14380,
+    "sha256": "90f75bc167ae9b4e4e980689ad5fdd81ccfc5efef457cdec01234dccd0b8dd8e",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/controls/SKILL.md",
+    "bytes": 9521,
+    "sha256": "aed7b20a79487649e3fbfa6fe34c72065c8d937b31a9ee418c79ac4c4f7ab712",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/design-ui/SKILL.md",
+    "bytes": 5995,
+    "sha256": "5ac56024db2287e485d03e208423fad29909d3b323647c5568243bfa96f42acf",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/design-ui/references/animations.md",
+    "bytes": 11106,
+    "sha256": "33e01727f60c34872f3f0a52c92513f9af1681449ebaa35b51123127c31bf51f",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/design-ui/references/performance.md",
+    "bytes": 2884,
+    "sha256": "f4537590cca884143b8e628123810286b4bfef29b9283f900265190bd3d8bd5e",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/design-ui/references/refined-ui.md",
+    "bytes": 20469,
+    "sha256": "9abf1b1e34632f0788fec8f49a8ade216a72aab06f6cf18528b6c502c7f5a56d",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/design-ui/references/surfaces.md",
+    "bytes": 6586,
+    "sha256": "c2eac605c207ba67b2e3bf6a3918f293a6fe02ce8c72c630a51faceb321b445d",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/design-ui/references/typography.md",
+    "bytes": 3180,
+    "sha256": "b91125ab0edf02a7f582bae434ae957af2f6729e7be038304bb2d0c983697eb8",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/game-animation-frames/SKILL.md",
+    "bytes": 4386,
+    "sha256": "3840f8166d8784d672531fee4c25b618867820e97ff4faf17135f26399e0e097",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/game-asset-core/SKILL.md",
+    "bytes": 3858,
+    "sha256": "690bb8a77495bc12c2e95b60d907a1529de87b5f65856281bb67bc67839c4cfc",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/game-character-consistency/SKILL.md",
+    "bytes": 2795,
+    "sha256": "5fc49d9364193607cf3bca8f1884a43ccd4d3cbe63df69ef67b9b53346881afd",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/game-tilesets/SKILL.md",
+    "bytes": 3028,
+    "sha256": "38eb784765e1b5adaee3cca138978be12f968521a80e14f3c83e096b6308e10b",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/game-ui-icons/SKILL.md",
+    "bytes": 2274,
+    "sha256": "18fd7d9a86bbba018c2eb05ffbad99bda9a8d876d7f61a80de6e6f7771771028",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/LICENSE",
+    "bytes": 1065,
+    "sha256": "d63ddc781bf0d15753fe0ba22c7cd5828dabb7776465ea4d4939558d4909b0fa",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/SKILL.md",
+    "bytes": 7738,
+    "sha256": "992eeaa76ce3c06220e58867c9ff7554117c4af703539d7796f048e22b868f17",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/SOURCE.md",
+    "bytes": 303,
+    "sha256": "a3667d46be6cda6ec841c482ca371b9bae081445bc9fb15e08e5ef5e22386d31",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/deliverables.md",
+    "bytes": 7345,
+    "sha256": "0513bc2e2b406142f1cab3139e861c1a69de6865b686bde7e7499ba53afc7630",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/layered-map-contract.md",
+    "bytes": 8102,
+    "sha256": "0af8127a5188d9d09fcf9913cf2804c5e40eb6b2be422c48d356d22c649b10a2",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/map-strategies.md",
+    "bytes": 26755,
+    "sha256": "91659c967efd0edde10ca3bd1cc136b17b7820c0da7279078d5020827935095d",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/object-production-gate.md",
+    "bytes": 3192,
+    "sha256": "f26eddd69b5561b6cae7945222e9212f5bf6e534fda427f48a58746238ac8bb8",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/pipeline.md",
+    "bytes": 16554,
+    "sha256": "e227cdc348607228f3474fe4ea1d533d65e377dd17e36a8ca61e4708fabc37c0",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/prop-pack-contract.md",
+    "bytes": 9458,
+    "sha256": "93be2245aa4f3ff9e591127a7318f34843b6458a85d7c614ca024500d30107f9",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/references/side-scroll-stages.md",
+    "bytes": 5627,
+    "sha256": "0926d20385024052bab2044645f49657552d0bb2f259aa1958a809e3332275b0",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/scripts/compose_layered_preview.py",
+    "bytes": 5256,
+    "sha256": "29d256385961475de142d2701231a9e67c369e5270c193a66df3c51b6c888855",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dmap/scripts/extract_prop_pack.py",
+    "bytes": 13050,
+    "sha256": "c02a2726497e6771e0a5a1e5105591ce98b9f161b8f6a36e04863bf7592f8e36",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/LICENSE",
+    "bytes": 1065,
+    "sha256": "d63ddc781bf0d15753fe0ba22c7cd5828dabb7776465ea4d4939558d4909b0fa",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/SKILL.md",
+    "bytes": 21260,
+    "sha256": "d620ac32acdb5946a41e41269aefab0b295e8038df57c2e89ce3749415e896e6",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/SOURCE.md",
+    "bytes": 303,
+    "sha256": "a3667d46be6cda6ec841c482ca371b9bae081445bc9fb15e08e5ef5e22386d31",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/references/modes.md",
+    "bytes": 5799,
+    "sha256": "88b75203732cf1e04af8d98427c2ddef617b7bbc1a844841d75efdf4c1359a39",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/references/prompt-rules.md",
+    "bytes": 11603,
+    "sha256": "6a82348083283a29d86c934a280b0bb80c40f926a1e08582050f6dd9068041f3",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/scripts/generate2dsprite.py",
+    "bytes": 42687,
+    "sha256": "681d0885d1813e9d7e1a82dfd340c1c71c8158e57a4c0710516c3f6c2c944a95",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/generate2dsprite/scripts/make_layout_guide.py",
+    "bytes": 3590,
+    "sha256": "a1a91b069e998d304b8c37f14ec33c139f50252b5fb04574f4c997d268ec6b58",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/imagine/SKILL.md",
+    "bytes": 12383,
+    "sha256": "c4ce1e170e2d0e000378fd4d6da0fa8ad277621b36f0c9ae62313a35f6d45345",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/multiplayer-p2p/SKILL.md",
+    "bytes": 5067,
+    "sha256": "234ee1648566f808315295b5e5b6bc6b6e2933a183ac1a584dcd243d792a4bf5",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/multiplayer-p2p/references/react-binding.md",
+    "bytes": 4831,
+    "sha256": "77391d4a47f519889386895af34f2c101a089616caddbc47ba0134f068a734c9",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/multiplayer-p2p/references/signaling-relay.md",
+    "bytes": 9150,
+    "sha256": "4277bb2f17e208a3d5afe72ef965788876a2935379175a9b0eb20dc2c898766f",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/neon/SKILL.md",
+    "bytes": 6894,
+    "sha256": "276a50327788dc8ee1c0679c4c57a83c29b68106084c98c72442496583b84a07",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/og/SKILL.md",
+    "bytes": 5914,
+    "sha256": "7c8b238d2126ab5ac92027e55b48317d03af323a7ffa8b72ea8be4bcde7c5ec5",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/og/references/custom-card.md",
+    "bytes": 5768,
+    "sha256": "d4971cc6a66f7bbb593c018d20efc1d7e7b7aa3fca5faeda6c1800dfb74e0a0b",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/og/references/favicon-and-icons.md",
+    "bytes": 1959,
+    "sha256": "bc95ed577825a411571f4680f992799a26811dd72af6714375dc49800e216db6",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/og/references/og-type-contract.md",
+    "bytes": 1749,
+    "sha256": "2743a8a9a6c1eafb8aec5ae8c83f2202533df6a55649582684d2bce18a52ea2f",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/og/references/placeholder-card.md",
+    "bytes": 887,
+    "sha256": "c21551f098562c8ff49004885596f71848c09af13b19237f1babe820e4f7e957",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/og/references/x-banner.md",
+    "bytes": 2241,
+    "sha256": "018313da42fad4f8007d3b39630af1364fb2f31ea65bbf9e1aa3ab7a2f1660d5",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/threejs/SKILL.md",
+    "bytes": 3021,
+    "sha256": "0fadfe66cf788bce9bcef87a3bc8d6c65e5b6275976b7bee1a914a0d05d6ecc6",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/threejs/references/llms-full.txt",
+    "bytes": 132250,
+    "sha256": "e93ae843c05b2f936efaaa5946d506ca70a7cc15fa2f7adf79f9d4c70659b2cc",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/video2dsprite/LICENSE",
+    "bytes": 1065,
+    "sha256": "d63ddc781bf0d15753fe0ba22c7cd5828dabb7776465ea4d4939558d4909b0fa",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/video2dsprite/SKILL.md",
+    "bytes": 10058,
+    "sha256": "09062be6facd6d35373777eb464c32be7e1272030e0b5f1f66b5100e7b3e6f14",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/video2dsprite/SOURCE.md",
+    "bytes": 303,
+    "sha256": "a3667d46be6cda6ec841c482ca371b9bae081445bc9fb15e08e5ef5e22386d31",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/video2dsprite/references/pipeline.md",
+    "bytes": 2544,
+    "sha256": "d8dcafb959b92c88c754bb784d8da047e4537bde1679875da2ce73463bbe43d0",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/video2dsprite/references/prompt-rules.md",
+    "bytes": 2482,
+    "sha256": "b1bee1a50932dc4bb26f499027d4534f556c8ef99c6744877cddc9321d8e2783",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/video2dsprite/scripts/video2dsprite.py",
+    "bytes": 16164,
+    "sha256": "5a580ace4b07ef66d3069ad7fca80f744655e9ba17bdea82dfe2717bd4dfedea",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/skills/xai-api/SKILL.md",
+    "bytes": 6607,
+    "sha256": "56acdf3895ae20ac19ebbc068b01f9bca558af261f019941b0227f224bdcb2eb",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".grok/status",
+    "bytes": 90,
+    "sha256": "bcf49ee0859b95922f36ae9804d219f78113eca4b8ab198ec29bbfd770c0f19a",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".node_modules.lock",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".prettierrc",
+    "bytes": 90,
+    "sha256": "d5f90f76c5b68ce7be5ba077813f97e1983511b8c314764537345a538c1261f4",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": ".project_id",
+    "bytes": 36,
+    "sha256": "aa48b8d0ee2ac3c63581c7d95bb27f2160785f37ae0a4621b5e27144a6ad038d",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": ".vercel/output/config.json",
+    "bytes": 366,
+    "sha256": "ec7bdc89d3083a035cc6dbe3a8b1bc293075db1c9c9a456ef1db6926e3d2bfe0",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/.vc-config.json",
+    "bytes": 149,
+    "sha256": "14de6d385da313f4426d4a5a9c3100e8b346ad8ea5f7e7c6b15bcfe363369b64",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_chunks/core.mjs",
+    "bytes": 253,
+    "sha256": "33d72bf84a3312bfb4800127d8a1c38adb23c7ba732e642cd18c4f3ab2a52499",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_chunks/ssr-renderer.mjs",
+    "bytes": 965,
+    "sha256": "27072c6dd5c643be4934b0b2cfcce92873819eee5895dc7bfa04164e1b1b9136",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/@better-auth/core+[...].mjs",
+    "bytes": 762999,
+    "sha256": "88ded79d71e21294f3844f2ea77abc818b01ac5c436995792a65a45e954d2ce0",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/@better-auth/kysely-adapter+[...].mjs",
+    "bytes": 473013,
+    "sha256": "19f72b1dbee6c0875a7bc3cebb15a2bd9e74baff10199da8686342c7f7899791",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/@better-auth/telemetry+[...].mjs",
+    "bytes": 17536,
+    "sha256": "0f8c3029a1f2216d62b3f36fa1228a2939af21cc8df1a6a489f81e532be350ae",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/@tanstack/react-router+[...].mjs",
+    "bytes": 677460,
+    "sha256": "6c4a2a6632db0859c511f615c9e29ac71a19b4aef0854343a9002ddd6720809b",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/@tanstack/router-core+[...].mjs",
+    "bytes": 122173,
+    "sha256": "5117ade79e81aff15ba6717d742d844c3f7d1d9425f5dc44691504a74fe5b74c",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/better-auth__memory-adapter.mjs",
+    "bytes": 14717,
+    "sha256": "c2b1a188ea16a4211d37af834c9eefd8be799d58dca6a869f85c304dbfeb462a",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/better-auth__utils.mjs",
+    "bytes": 3807,
+    "sha256": "a3254a559cad5e964307e4e2fd4e5462fd75247b76e7a3da8beb6aa81beaf135",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/class-variance-authority+clsx.mjs",
+    "bytes": 3173,
+    "sha256": "b285c32099a1ef600310ee6006091d3c004a86f441753eac7b0bafe275bf25f4",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/defu.mjs",
+    "bytes": 1411,
+    "sha256": "2fb340e8b61e9173305d4ca1d5d3b0aa3ae059af077e820175152ec8025726c1",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs",
+    "bytes": 750444,
+    "sha256": "3c9c6f83c0c2bda4a6aa619625db5a2510992eb6d935f7766b3b9b82d262cd30",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/h3+rou3+srvx.mjs",
+    "bytes": 22573,
+    "sha256": "5d9cb7ea25a5aa0eaa4a9563c2589d53d46b707b406f236a394de3a405cc48af",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/h3-v2+rou3.mjs",
+    "bytes": 17584,
+    "sha256": "7a41b4dd1f4db3598e7661e98b1b773b814df1e9046e78c32205217a9c5744cf",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/initdb.wasm",
+    "bytes": 395059,
+    "sha256": "aa134fde5c96733ff9ab9644f409d9337ae7b3f42a66914a4dad2beec03824df",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/jose.mjs",
+    "bytes": 38638,
+    "sha256": "95c294d7abb9fa0cfb4e33443546085515743c6e4fcb705d692b0b7f76dee2f6",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/lucide-react.mjs",
+    "bytes": 10609,
+    "sha256": "a5234538b2840017c628a2aaad5d0c3b614d6a4c19aa96dd4dc84d8f9a96c87f",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/nanostores.mjs",
+    "bytes": 5534,
+    "sha256": "ac95180ff062a480c50f470e8832ea605099d94f490cbaf6a1f95ed2d1c3ae54",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/noble__ciphers.mjs",
+    "bytes": 46584,
+    "sha256": "786f2cb877b2ff804f1dd78f8ec25dad2b350e77864a2f7af4eb0963c1ec028c",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/noble__hashes.mjs",
+    "bytes": 23613,
+    "sha256": "fd6574a80f30a928aa7f367fb3881e0c4f7f05e90f3f9b1b6cbd3bcd60c58746",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/pg.mjs",
+    "bytes": 148642,
+    "sha256": "0c6eb46bc59b9479965b275da3d375733ebb7f676c2e2674c999d0fad350e0e9",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/pglite.data",
+    "bytes": 6293225,
+    "sha256": "e39943c245ec32c36ed89bd5000229c8f3874983db93b7081d949155aaefaebf",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/pglite.wasm",
+    "bytes": 10087563,
+    "sha256": "9f9ec7f259568faff006da37aa7d8393d5e2ce7fb3f98ec54661457e00f31e47",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/sonner.mjs",
+    "bytes": 53631,
+    "sha256": "b8d31d3de82ef3180c8bce67dfb438b1b0c186816d5e6ae27bb674221f86181d",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/tailwind-merge.mjs",
+    "bytes": 88134,
+    "sha256": "c6ab0b0bbba3cd0d59f2eec716af79c1aca6749ab87846fced6705b1fb528cde",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/tanstack__history.mjs",
+    "bytes": 12053,
+    "sha256": "a8955fd7540cf8741692fc48f3c6ea76c9dc1bb360a4c2144cea2bc4ac245594",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_libs/zod.mjs",
+    "bytes": 372,
+    "sha256": "d1144d602b43aeb14fe1c185eaad05b1e204bfc0a524aa6eed64608d17cff80b",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_runtime.mjs",
+    "bytes": 1928,
+    "sha256": "efc57dcff870d1e3f2f361b3ba80eb84330c649bef8f1529736019ea7e961346",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/client-B40BzJxt.mjs",
+    "bytes": 37117,
+    "sha256": "3d87e082149a1bea474e901cd4fa83a026fe98dadda2123a49df4fe959096c11",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/empty-plugin-adapters-D9UWiqvJ.mjs",
+    "bytes": 230,
+    "sha256": "ee1957ac485b923838aecb47c3427e91eb7275698cefcda4a6c9018e6cdb1c9e",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/isolation.server-CGNg1r0B.mjs",
+    "bytes": 2055,
+    "sha256": "4c94c15316af44335d9791e12073564cf759c70ac9fa3dc9a1abca2cf029197e",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/kysely-adapter-Cj_QZw5p.mjs",
+    "bytes": 158,
+    "sha256": "1ee2df08f8091ab7767485fd8de0ecf42aa3eeb322cf312af544ad5f0d9fac1d",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/ledger-C9sWzCOX.mjs",
+    "bytes": 18738,
+    "sha256": "4184701849497be62fe4d994fdedef643df2c5705f4d75efed6926f06f1dcd13",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/login-C8npho0_.mjs",
+    "bytes": 5884,
+    "sha256": "d08a05984b3c158aa669acb4a0d16b96e531918d67f92626fbf473629ab733f8",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/middleware-DepnmHI4.mjs",
+    "bytes": 1955,
+    "sha256": "d1eb9950a5f0e7651036a123ac7fe33eff0f809a9add85b15b51f89c03a8d9cc",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/router-ZD5JZgUx.mjs",
+    "bytes": 103642,
+    "sha256": "56f1ebd6eb06b79ce87d4ad5fc44e15b1c690f90c21bfaf9bd032cdd99b3af00",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/routes-NlckoMJG.mjs",
+    "bytes": 87260,
+    "sha256": "caec8b8b7e37bb0542a1b7f753125c43e742b190d3b043cd5fa6fd368e37343d",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/server-DsPZvsm3.mjs",
+    "bytes": 325445,
+    "sha256": "1ffb7364cdc0b9061891aee2dc42506a00a9a138e82bc66aca7385696ca03d18",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/ssr.mjs",
+    "bytes": 70544,
+    "sha256": "17416c61678f513b5d09d602fdb1aac7c6ecf91f9250b117d59293b9c4bc0af4",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/start-5Z2QO8AU.mjs",
+    "bytes": 140,
+    "sha256": "2c644f9fa515073658d009ff4f694a224001732f104818e6c80212ff0afc37e8",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/types-Ca2BjDId.mjs",
+    "bytes": 15111,
+    "sha256": "ee5d4180a177ccb0990ab57ad71f174b290123238f918d71d35afe73ba883664",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/url-DwGxbmbA.mjs",
+    "bytes": 15541,
+    "sha256": "aa367dde9fcf882c053ef2ed0b2f3855ee187f1f656e750adb1012d42ba047a6",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/use-current-user-DG6UNzh9.mjs",
+    "bytes": 1988,
+    "sha256": "89d9af1cc3d79e3349f5afb72d79cdb802ae0722763adc77abbdfc0c52192bf6",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_ssr/verify.server-C9KuSkG9.mjs",
+    "bytes": 3470,
+    "sha256": "7ea322cf6f5e479187fcb662a781fa0b423c1cabb7c707aeb75a9630e0728dbf",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/_tanstack-start-manifest_v-6BfaX2wA.mjs",
+    "bytes": 890,
+    "sha256": "d6dd5a9e01f4955f9ca0f5687caaa016ae43a9249c0fdf46e1090cb0ebc61a7f",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/functions/__server.func/index.mjs",
+    "bytes": 30358,
+    "sha256": "35d9afa4d27a82fcf6d8df0637d0d6ad2df841e6ebc13cb8698d5b5c03acf952",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/nitro.json",
+    "bytes": 596,
+    "sha256": "b1e11957e96418a9f6bb4ca98d73191731242698321e4ba4d9d78e5fb1540b96",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/icon-180.png",
+    "bytes": 2100,
+    "sha256": "3cf5d17d294b51c6cca6c86070309b88554b7ad702b0412e8e2709a01990bc8a",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/assets/homescreen/glass-puzzle.svg",
+    "bytes": 1811,
+    "sha256": "a677c9356c23d1e699559ddbffac97cd135c2782cd893fb34f3738f6d11bee17",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/assets/homescreen/glass-share.svg",
+    "bytes": 2388,
+    "sha256": "efad1b4b507a68c1f1af4aad2c93e8c24076224aa593da86677697f543d026d6",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/assets/homescreen/logo-grok.svg",
+    "bytes": 1059,
+    "sha256": "0654e3e59cce69856f38525cbfe4ab3a9ef52d4b64c8532dd0bc1a3f34fcb5b1",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/assets/homescreen/ob-ipad.png",
+    "bytes": 101843,
+    "sha256": "4c9b09a4660c662b394597d551a04124293b0e37a7a7c72271dd2948c4499a14",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/assets/homescreen/ob-phone.png",
+    "bytes": 103612,
+    "sha256": "80e0a5ede614d9b920c67d7cb79c80a79134687b1fc9f560384e896a88e302db",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/assets/homescreen/plus.svg",
+    "bytes": 2401,
+    "sha256": "c2c94be46aa2c3c2fda95d7c6f2fc6d0b656d1f5847828d5d95b5a81a6f4f20d",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/__grok/install/styles.css",
+    "bytes": 6717,
+    "sha256": "7e8e881302f58e54a9c07e7be395692d3de20fdaa27ce358531cc8dcca472cb6",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/client-DRhaju3Z.js",
+    "bytes": 32675,
+    "sha256": "a14a5f47d4e4e748f8a1ea917585f32e12ef6de4b483177fd1761ba38da92d74",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/index-eKuTgOaL.js",
+    "bytes": 522435,
+    "sha256": "3ba8aa1b7a77a2fcfb24273b585335963dba69bd088e3faaeea3db00f873125a",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/login-By-8eYFm.js",
+    "bytes": 3133,
+    "sha256": "f056bafa093dbd740817f239c0d27552db7bfa7ac28da9ac59000ca6f1bbf9ef",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/react-SIfiwpqq.js",
+    "bytes": 8185,
+    "sha256": "160d3a8e9743bcdba8929f1f4a80a83c787bee7be2b7344600a66345239593eb",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/routes-qqubgno-.js",
+    "bytes": 55383,
+    "sha256": "993a13e0cd64e118d7e374e2f71446c8278772a8339539d3e2d81f3f091057cc",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/styles-DD5f3xrI.css",
+    "bytes": 33294,
+    "sha256": "64eee107670a13206db35203b40ef29c2dd648cea618c41f63bfb797a0b064e3",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/assets/use-current-user-CzUq4unU.js",
+    "bytes": 295,
+    "sha256": "81052ebf506824f35ecbbfca6e1edffd2c3020e24bb76d703c4988348c4d5668",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/favicon.svg",
+    "bytes": 342,
+    "sha256": "d6e5cf70c4eed20b7ebcdb2f21b863e84566b547747dd3797ef5ceea74331e8f",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": ".vercel/output/static/og.jpg",
+    "bytes": 45053,
+    "sha256": "1a228c10c951eb0663f16c11b980ff708f164adf626d2c79ec2711eb66d17668",
+    "review_scope": "generated deployment output; inventory only"
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 18118,
+    "sha256": "3675a943bb83fb2eb534c08030ef99ccf0875ef0300e801366aa4756ba48948d",
+    "review_scope": "Grok platform metadata/instructions; not Flutter requirements"
+  },
+  {
+    "path": "AGENTS.project.md",
+    "bytes": 2071,
+    "sha256": "323b304394b145b06fff71e918ebc8627876a9b55a1b4d90a4846d51a8929c1f",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "artifacts/test-glass-export.mjs",
+    "bytes": 3050,
+    "sha256": "7be562e37312e21eea101d96575a1bc0e0cbd7514301c34bb52f3c3d7651294b",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "artifacts/test-glass-ui.mjs",
+    "bytes": 3171,
+    "sha256": "48d7f12410adc7158937f268b3cf2f16ee6104265616fa6d48838825ca274e28",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "attachments/37F3727B-2923-43D4-A4E5-6E43CAA0AB32",
+    "bytes": 119001,
+    "sha256": "6853706c3184c28efa17afba54bad21f084aab47da5e8fb431ed6fe9a636e1db",
+    "review_scope": "reference input; exclude unrelated personal images from new app"
+  },
+  {
+    "path": "attachments/IMG_9398.jpg",
+    "bytes": 203300,
+    "sha256": "a311486c1da3bcc5cf0b8f94606d1629c5d86f2869a2dc0f88b4ce3885f58478",
+    "review_scope": "reference input; exclude unrelated personal images from new app"
+  },
+  {
+    "path": "attachments/IMG_9412.jpg",
+    "bytes": 335384,
+    "sha256": "72a09f1ae8facac86ee490b5bdc5c34056ad06857d30bc1fb9594436759bd0bf",
+    "review_scope": "reference input; exclude unrelated personal images from new app"
+  },
+  {
+    "path": "attachments/IMG_9413.jpg",
+    "bytes": 313701,
+    "sha256": "48fbcfe322515d60174e2d479b917ba68df1e202ac87e1ab40e5fe84e9b06a5a",
+    "review_scope": "reference input; exclude unrelated personal images from new app"
+  },
+  {
+    "path": "attachments/WhatsApp Image 2026-08-24 at 12.43.38 PM.jpeg",
+    "bytes": 110795,
+    "sha256": "15e4fc95dc891fde5c0ea5411f4e5019b58444b7ee3bdd31e34a44716e8ad42d",
+    "review_scope": "reference input; exclude unrelated personal images from new app"
+  },
+  {
+    "path": "attachments/image.png",
+    "bytes": 1285287,
+    "sha256": "5a837e5cf6aa092d257580be53c78cd17a934d625346e39dbcb80f891f8c389e",
+    "review_scope": "reference input; exclude unrelated personal images from new app"
+  },
+  {
+    "path": "eslint.config.mjs",
+    "bytes": 1277,
+    "sha256": "9c79df07c33ff6aa13876bdd1e7e6652aa1ecb377c7b7f029f7915d215ee4488",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "migrations/0001_auth.sql",
+    "bytes": 2739,
+    "sha256": "f953cacc448c0c81ae4fe63e66b0e59569e840782ad279fdee201dff529363e9",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "migrations/0002_ledger.sql",
+    "bytes": 2227,
+    "sha256": "3e4ef8de22647a5b1476bc211c2bfebbe056ca1d14bee90deacb965bb053f0af",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "migrations/0003_accounts.sql",
+    "bytes": 653,
+    "sha256": "c3c9234b9bfad6341bb3be79e2896a2b945e3a5860b535fae7fd10333cb96a34",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "migrations/0004_projects.sql",
+    "bytes": 403,
+    "sha256": "47bbe765945efa559b132541bbb56d0e02d9b6365205331f86fc2de8af836622",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "migrations/auth/0001_auth.sql",
+    "bytes": 2739,
+    "sha256": "f953cacc448c0c81ae4fe63e66b0e59569e840782ad279fdee201dff529363e9",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "native/README.md",
+    "bytes": 3892,
+    "sha256": "fe5772fcde73e2a1124d4730526bf6e92c0ac8af3afbd893d7392d9406748b93",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/.gitignore",
+    "bytes": 67,
+    "sha256": "f0381797dbb00a57da99e63c6ab42ffb6b1042d24c27aca07f02ac36e6e28278",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/build.gradle.kts",
+    "bytes": 1031,
+    "sha256": "2cc07b5a5369aa9db1e580f626caab189f8cf8d90323cce55bd841ad073df522",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/proguard-rules.pro",
+    "bytes": 75,
+    "sha256": "eccb38f9ef4be3efd6d9509873fe90d27bbe871644dc718817c86c14c5ecd966",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/AndroidManifest.xml",
+    "bytes": 1866,
+    "sha256": "07e0098d7b2df288bcea5589b85b5ded23cf1a827acbec4553942f594b6db7b6",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/java/com/keev/ledger/AppConfig.kt",
+    "bytes": 490,
+    "sha256": "2d7ac9db0e74bf9fa4818ba75e3a80de5f9d4731ad03799572e4f5b12a85edb1",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/java/com/keev/ledger/MainActivity.kt",
+    "bytes": 8061,
+    "sha256": "74312e7e3c2b9c07fd1c75a7fe01d947921f90ad63e8ba6b3d3aab7c6b92795c",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/drawable/ic_logo.png",
+    "bytes": 17326,
+    "sha256": "3525552a6e515756c643d4df1f92192e01812f19ea5f009e31e50ce48d8e23dd",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "bytes": 4331,
+    "sha256": "164bda7c580e7d5faee2254b825270b0ff6d55b8e40de3c15e3895a79feadc6a",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "bytes": 4331,
+    "sha256": "164bda7c580e7d5faee2254b825270b0ff6d55b8e40de3c15e3895a79feadc6a",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "bytes": 2497,
+    "sha256": "ff9242ef3d83b470035a132d94d54d8a6e45359479948f85fe4e5a6e9033afe8",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "bytes": 2497,
+    "sha256": "ff9242ef3d83b470035a132d94d54d8a6e45359479948f85fe4e5a6e9033afe8",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "bytes": 6461,
+    "sha256": "0b02fed01d7d8f11ede1f63de4f6ecb87d2f6e221e1790f83cdafd56b43f39e4",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "bytes": 6461,
+    "sha256": "0b02fed01d7d8f11ede1f63de4f6ecb87d2f6e221e1790f83cdafd56b43f39e4",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "bytes": 11464,
+    "sha256": "15d302e3043357a43a8927ba05291e14f9a09620dc9334cbd1a6d3aa19aecaa1",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "bytes": 11464,
+    "sha256": "15d302e3043357a43a8927ba05291e14f9a09620dc9334cbd1a6d3aa19aecaa1",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "bytes": 17326,
+    "sha256": "3525552a6e515756c643d4df1f92192e01812f19ea5f009e31e50ce48d8e23dd",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "bytes": 17326,
+    "sha256": "3525552a6e515756c643d4df1f92192e01812f19ea5f009e31e50ce48d8e23dd",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/values/colors.xml",
+    "bytes": 150,
+    "sha256": "71dacb1018aba7651a95b05bdaade7850601112f6daaaf7180453e6073285d22",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/values/strings.xml",
+    "bytes": 112,
+    "sha256": "1db2e124616e3cdf2491204e8b66d4dc7bbd4ff8acf6bc9d3fe23e96698c5f96",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/values/themes.xml",
+    "bytes": 432,
+    "sha256": "fe4e96b2f8b5de9311cbf9eddced7bf8fe9b4a4c1430eac57f4fc9fe8a05dde3",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/xml/file_paths.xml",
+    "bytes": 122,
+    "sha256": "b925c1dc06035e01dd8d0bf75d1f95bc309feb7ab29bb48fa9e72e7005cc523a",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/app/src/main/res/xml/network_security_config.xml",
+    "bytes": 254,
+    "sha256": "dbc726438a7e99c69fdfc39146cd51ef8300dacb236843bbce3ecd2a1712a80f",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/build.gradle.kts",
+    "bytes": 141,
+    "sha256": "e0c1b81c7b768fc74b0722daee90b3fea6ce838b31d7b3ff04232fecec3caf8b",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/gradle/wrapper/gradle-wrapper.properties",
+    "bytes": 250,
+    "sha256": "712d9bc912d4b0d42b0faf8c6afeed13ae31ced75ca28463b1dfc4ced1a4bc9a",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/gradle.properties",
+    "bytes": 136,
+    "sha256": "5ff4359bb22b9436ec644207f9240f4e47b9a733fe03ba402c77944a05283574",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/android/settings.gradle.kts",
+    "bytes": 330,
+    "sha256": "127273dc7daf2ba6f4b94ee79f4f064e97c5977c4e82fbbbe0922c92fa35ee75",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/.gitignore",
+    "bytes": 57,
+    "sha256": "fcddaa0630c898b40a237cf228cff9ed6413fd9e36db747ad9339032120bd623",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/AppConfig.swift",
+    "bytes": 693,
+    "sha256": "890f41ad12ddd2ceda338bd5b4dce8657aed65c3b72794b255d54cd183fc032d",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Assets.xcassets/AccentColor.colorset/Contents.json",
+    "bytes": 329,
+    "sha256": "18dd00170ffc51e2788a502411069637db119c15808beb37dde2ea97f5715298",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+    "bytes": 219096,
+    "sha256": "9cfae342c19a258ae114417f3c27373a7c1477b9ed9b32275b35eb0e4c30cf20",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "bytes": 211,
+    "sha256": "3725fefca1cc2f15dcff52b03b7db47884c8141e5be1d4e559367b76117f8c48",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Assets.xcassets/Contents.json",
+    "bytes": 63,
+    "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Assets.xcassets/Logo.imageset/Contents.json",
+    "bytes": 154,
+    "sha256": "f2e09710d6df69f2464618a4a69bf0e76da6be7122ee7bab99df13fce2a3b7d4",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Assets.xcassets/Logo.imageset/Logo.png",
+    "bytes": 198940,
+    "sha256": "447324531df1c653c18b600e16674a50bbbb1b6709c91071582a328272894657",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/Info.plist",
+    "bytes": 2086,
+    "sha256": "48d6e970d061271b8a65bc4adf0e604a8fed2b741ecfbef0e22fd31677c6a392",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/KeEvLedgerApp.swift",
+    "bytes": 2159,
+    "sha256": "3db4e569817a8d20d939882cf8ec1fcd8be3494e4595d68c5b3c0adb5d334b10",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/PrivacyInfo.xcprivacy",
+    "bytes": 598,
+    "sha256": "a331d51864743ebe4e00dd22360b4a538b6b3ac26a6b3eb54094e60a36959a12",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger/WebContainerView.swift",
+    "bytes": 3119,
+    "sha256": "db647a742ae60b977cb7dd71c515b4652897e57644d1af1cd812f3b9ecdc2ab8",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "native/ios/KeEvLedger.xcodeproj/project.pbxproj",
+    "bytes": 9835,
+    "sha256": "3103d70ed8660395fd10a62b33e33bbe7069263ea0f11145ae77a15ee2d3b83f",
+    "review_scope": "WebView wrapper/configuration/asset reference; replace"
+  },
+  {
+    "path": "package-lock.json",
+    "bytes": 263133,
+    "sha256": "0c63112d97d0302747e0379eb2053bd1e1238f2d08a81aec86037f305dceed3c",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "package.json",
+    "bytes": 3183,
+    "sha256": "cdab3ec3e639d9f33e0e3c2abed7e642716f8b3ab1655f44174bd9dadf389190",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "public/__grok/icon-180.png",
+    "bytes": 2100,
+    "sha256": "3cf5d17d294b51c6cca6c86070309b88554b7ad702b0412e8e2709a01990bc8a",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/assets/homescreen/glass-puzzle.svg",
+    "bytes": 1811,
+    "sha256": "a677c9356c23d1e699559ddbffac97cd135c2782cd893fb34f3738f6d11bee17",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/assets/homescreen/glass-share.svg",
+    "bytes": 2388,
+    "sha256": "efad1b4b507a68c1f1af4aad2c93e8c24076224aa593da86677697f543d026d6",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/assets/homescreen/logo-grok.svg",
+    "bytes": 1059,
+    "sha256": "0654e3e59cce69856f38525cbfe4ab3a9ef52d4b64c8532dd0bc1a3f34fcb5b1",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/assets/homescreen/ob-ipad.png",
+    "bytes": 101843,
+    "sha256": "4c9b09a4660c662b394597d551a04124293b0e37a7a7c72271dd2948c4499a14",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/assets/homescreen/ob-phone.png",
+    "bytes": 103612,
+    "sha256": "80e0a5ede614d9b920c67d7cb79c80a79134687b1fc9f560384e896a88e302db",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/assets/homescreen/plus.svg",
+    "bytes": 2401,
+    "sha256": "c2c94be46aa2c3c2fda95d7c6f2fc6d0b656d1f5847828d5d95b5a81a6f4f20d",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/__grok/install/styles.css",
+    "bytes": 6717,
+    "sha256": "7e8e881302f58e54a9c07e7be395692d3de20fdaa27ce358531cc8dcca472cb6",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/favicon.svg",
+    "bytes": 711,
+    "sha256": "ed30936626c57ce97c1bebc4ac31dbe9a21647224c300e18a1446a8d1ff9d731",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/icon-180.png",
+    "bytes": 13821,
+    "sha256": "19d302f998c0e452165f58af0f2562780bdc30a6500b2539b1a7a04f7aa07806",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/icon-192.png",
+    "bytes": 15122,
+    "sha256": "2db6fdbe78c93005014cc2aff201a056c665f2a832242ad26a239c135d7211de",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/icon-512.png",
+    "bytes": 67747,
+    "sha256": "bd6fa9516969e3427bf9127b5490f7bb8dc88a9f09a9d08a81b9ec0ed4d76f31",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/keev-favicon-32.png",
+    "bytes": 1249,
+    "sha256": "dab86ea2ca3619f34d8376d5e5bdba289eb0cde832cf5f280dec12afcb6767ef",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/keev-logo.png",
+    "bytes": 198940,
+    "sha256": "447324531df1c653c18b600e16674a50bbbb1b6709c91071582a328272894657",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "public/og.jpg",
+    "bytes": 20518,
+    "sha256": "c7eaf6de552eedca7347c8d2eeee6858d4757db0841bb572ca39bca080ad3c03",
+    "review_scope": "web/brand asset; selective retention"
+  },
+  {
+    "path": "screenshots/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-after-card.png",
+    "bytes": 54084,
+    "sha256": "4f15ea33c211398b5bf4308a3f10a2099770507364ea5a5918063332fb1bb1c6",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-after-expense.png",
+    "bytes": 51905,
+    "sha256": "28b0f65624a24fb4c8449f61fd9bbb6e8ebb4ab35c8704ed6462bdcdcbaceaf1",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-balance.png",
+    "bytes": 49653,
+    "sha256": "fa48058833a2e9b467966096e21d7924ea5fd88a1cf1e500b22049fa36ed5f5b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-home.png",
+    "bytes": 57117,
+    "sha256": "8f968b8fbf2546950d8b9443fef45d25ad5aff06e0c5b85f8b2028cc63f7dddb",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-ledger.png",
+    "bytes": 47093,
+    "sha256": "6b4fbfcfd3ec4da1d0c90081bc0cf4303dd049fff9d31162a5c0b7fb6d0399c9",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-list.png",
+    "bytes": 44862,
+    "sha256": "5720a4161ec9012b5e0c8922b2d7011650f557e3b6a39f71c0f318004335edbc",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-login.png",
+    "bytes": 50652,
+    "sha256": "c1d12108768172c1ee75d3476c605dae151999a72b68dff00f0fff39a42f0288",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/acct-report.png",
+    "bytes": 48046,
+    "sha256": "2859563ec9f78493363e2f252d34cb432026d17c2f2cf0ae1075d0ae02803390",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/add-sheet-close.png",
+    "bytes": 140492,
+    "sha256": "62c6bb1694bbbfd1eb06817dcfcb43776e4514ca47253ee6434ca5a6b4952103",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/add.png",
+    "bytes": 39408,
+    "sha256": "f59c37c537c2d2237fc1242e41064a3395908907749e073c4b0a0dcdd30679c6",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/after-close-add.png",
+    "bytes": 113915,
+    "sha256": "bffb0dd032d1afac443efeb95d56006a939e974478f6df8e9db72d3e84b571c7",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/after-google-fix.png",
+    "bytes": 3541,
+    "sha256": "72e53f03b4b16fd0cad1cf02d3c0a74b5b96b0d27654dced0d758d76e7ede882",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/after-signup.png",
+    "bytes": 23604,
+    "sha256": "1dff6ac022c0527acc72d5becb6dd9fb74453475b7cc7a7cf740057762c98621",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/app-builder-built-mobile.png",
+    "bytes": 56574,
+    "sha256": "f89b1d202e59d61a8eac0906ddab759851d0fb211798c233e1cd040e0eb6785b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/app-builder-built.json",
+    "bytes": 1290,
+    "sha256": "a00f6e779d9d799a62e1ba1d9b558b6de6f7ad196e3870e59898aca75bf79a86",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/app-builder-built.png",
+    "bytes": 78406,
+    "sha256": "2ad8dd7fa559e950c22eb8a3b4a256f8481f66f830b0488c2a93160156991fde",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/app-builder-preview-mobile.png",
+    "bytes": 56574,
+    "sha256": "f89b1d202e59d61a8eac0906ddab759851d0fb211798c233e1cd040e0eb6785b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/app-builder-preview.json",
+    "bytes": 1238,
+    "sha256": "be942a02e6843a117304273821580eb4d0aa1df12da2a60da729ff0eb598553f",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/app-builder-preview.png",
+    "bytes": 78406,
+    "sha256": "2ad8dd7fa559e950c22eb8a3b4a256f8481f66f830b0488c2a93160156991fde",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/budget.png",
+    "bytes": 32410,
+    "sha256": "9f7e2cb36b20f224e439a4a71b941b658e6388f1182b8e1cbaeb492d250bf229",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/confirm-debug1.png",
+    "bytes": 126522,
+    "sha256": "76f31a31a4d08c49f1218014467c8ed27c9195738dc61a2cd45a815e97cee464",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/confirm-debug2.png",
+    "bytes": 97323,
+    "sha256": "9b5867183dd12c5564543691b411f8b72cdca5fe97b18e72dbc60ee98b87b1a1",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/confirm-debug3.png",
+    "bytes": 97323,
+    "sha256": "9b5867183dd12c5564543691b411f8b72cdca5fe97b18e72dbc60ee98b87b1a1",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/confirm-debug4.png",
+    "bytes": 113915,
+    "sha256": "bffb0dd032d1afac443efeb95d56006a939e974478f6df8e9db72d3e84b571c7",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/confirm-fixed.png",
+    "bytes": 96970,
+    "sha256": "ff1b7a47164008fc82e07c39e94333e4840343bf79f2968f4e1dbcb279df2dca",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/confirm-glass.png",
+    "bytes": 141516,
+    "sha256": "55f52088c2125fad66df501c85080e43c12a7ca753c440d3afa1f49ded46b7ec",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/debug-after.png",
+    "bytes": 33892,
+    "sha256": "35cf8a977a6c591cc58f7d97cdc52dd0bbf65fee452dfb9022bd559e6249c20c",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/debug-form.png",
+    "bytes": 41932,
+    "sha256": "bdea1fa374f1f1805e955d6ddf4a3183518952c0dd82fc1e5cab13452d854b59",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/fx-home.png",
+    "bytes": 80126,
+    "sha256": "e52bec68e46aa079b9b0d4891e81f4c3699093d4654dbebaad9ef61f8e6c4412",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/fx-settings.png",
+    "bytes": 123630,
+    "sha256": "5a8b34a9285ba284a611e55b77d6003016815f79b78b0fabc4cccc0bae133bec",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass-add.png",
+    "bytes": 109804,
+    "sha256": "5cf70a7448cb3dbf8cb9f271a2285fd484aaab5ae39a3de2f8e429eb67c4d05e",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass-home.png",
+    "bytes": 121782,
+    "sha256": "7b32f99421b64a84d2f6282e4fa152a743a4534b14e65742e488620292f3c1b0",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass-ledger.png",
+    "bytes": 102949,
+    "sha256": "4a60acf7851a8ec86ae32d151037ebabda7cf1db202ceb9ce86fbd1de2929184",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass-login.png",
+    "bytes": 112942,
+    "sha256": "da93e0ea92635762f1c018b142ae5f3d33fdac2293481340b7c7ca268444fbc2",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass-more.png",
+    "bytes": 94724,
+    "sha256": "a0cf96cd3477a3e1c24dc3e825b6a612a281a321199870b9bd11ace1aa38978b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass2-add.png",
+    "bytes": 141684,
+    "sha256": "115a58a9c2eda6b92fe69559da0ae9ff4dd905363a9fe74e3f5c19c7735473ef",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass2-export.png",
+    "bytes": 146818,
+    "sha256": "8a56165b48c8ff8ca5ff5af14aa3869d787928bf4e1984dd608cac6d766fe5e0",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass2-home.png",
+    "bytes": 120024,
+    "sha256": "bf3a70262251d49565a10a4a699c9a8bb1ce8dcd40b115bf497d2c0306d4420d",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/glass2-print.png",
+    "bytes": 160318,
+    "sha256": "d475df54b92d7397655ee13d9556b0438658b0783002aa92b47c6da92816fd6b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/google-continue.png",
+    "bytes": 78922,
+    "sha256": "ed67f2042505ed3a8be35bf78ab1ed72f0b611696a8217b31756bec3bf7c8bc0",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/guest-bind.png",
+    "bytes": 65458,
+    "sha256": "b5d95b55f2f99a7eea38f2b974c28a3e79b2c354dac5f319003d14df406a8276",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/guest-home.png",
+    "bytes": 52063,
+    "sha256": "3f1e07a24146c2015b1449b5da7aa5aebd62a6aa8eca4676b342e401621396e1",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/home-sample.png",
+    "bytes": 38630,
+    "sha256": "ec1a97d828c7ff247215a0ef87f2158864400d163118ad7b2967bcbb07e8da64",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/home.png",
+    "bytes": 49591,
+    "sha256": "189319bf58d6cfa682826c7d4b12ccb6211b6671b72c983d9eb6ae75ccee173f",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/keev-logo-privacy.png",
+    "bytes": 111045,
+    "sha256": "d82be20a4e48649b47512328e4eefa23787504618f0055e038d54387d9b874a9",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/keev-privacy.png",
+    "bytes": 112481,
+    "sha256": "311a0e9f479fb7116047d3bb023af5b4bb630a4c7753509530258e60d9e72e04",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/ledger.png",
+    "bytes": 27016,
+    "sha256": "1561ab03c722e417b3d9be46ef56d0c76dbb665967afef69fd2706dc3836bfd8",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/login-after-fix.png",
+    "bytes": 56574,
+    "sha256": "f89b1d202e59d61a8eac0906ddab759851d0fb211798c233e1cd040e0eb6785b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/login-email.png",
+    "bytes": 33372,
+    "sha256": "80e685defdc5c2987c341d3055b611908d38c78ca34c8a499a1e9dbdcd92d379",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/login-google-hint.png",
+    "bytes": 100251,
+    "sha256": "c7e7a543534a78cd266c61024c053d5f02dd344cf383c692beb047fe8c013c3e",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/login-guest.png",
+    "bytes": 50652,
+    "sha256": "c1d12108768172c1ee75d3476c605dae151999a72b68dff00f0fff39a42f0288",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/login.png",
+    "bytes": 26071,
+    "sha256": "be81d7164086df33ec669b5d2e5b63bc5a6dc3b5c70685a418d0009c850ee120",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/more.png",
+    "bytes": 36842,
+    "sha256": "95b32d677cf2d85f3c29cb5dbe8c7e71469acb8efe4e22a09d18f97cfc308946",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/privacy-fixed.png",
+    "bytes": 56574,
+    "sha256": "f89b1d202e59d61a8eac0906ddab759851d0fb211798c233e1cd040e0eb6785b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/project-home.png",
+    "bytes": 55729,
+    "sha256": "0862481bd8e110f32d054d588f0eeb8f642a01ab28fbd5056e65b931b147c55b",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/project-ledger.png",
+    "bytes": 39281,
+    "sha256": "f1379f6c082a69839a0a4ba694df40f0a267f0034aae480d60496ed367d6227e",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/project-report.png",
+    "bytes": 44369,
+    "sha256": "a7c6ba718d8c6f3b91cf28718b8b331278eaa8c9541b3a9e39618df477c37bfc",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/projects.png",
+    "bytes": 31498,
+    "sha256": "ccde4500624df918c588f25265c6220f8a4a11c6f669e494feaa47c53d54db0e",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/report-pie-balance.png",
+    "bytes": 50171,
+    "sha256": "44da15f0013e568b5d656760c7dab2e5c79987f4078af4c3d6a5e9daf7865022",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/report-pie-income.png",
+    "bytes": 58233,
+    "sha256": "fe1d083528bca734cfb64e263b937680d815e80ef84d963d0195a335b65d1e72",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/sgd-settings.png",
+    "bytes": 131425,
+    "sha256": "9f0a1a04d11d316b14960a31be81553ac2bb3bd7fae6b30317a7aada3ba205db",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "screenshots/shop.png",
+    "bytes": 49774,
+    "sha256": "8fa9ae4f3e89e7de7d7384406d3fca6364c9314a19870d4a65fe2f19c7e076b4",
+    "review_scope": "historical visual evidence; not proof of current runtime"
+  },
+  {
+    "path": "scripts/app-env-plugin.mjs",
+    "bytes": 1278,
+    "sha256": "92962d2361a98413c0cef80b31266d49b063cf4ecf6421bb99f57f6eef4ed7b6",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/brand-check.mjs",
+    "bytes": 4732,
+    "sha256": "e01311cecadede2e3290df8481c03f02b52ba67cb1c34d15ac19626dbd258b16",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/brand-check.test.mjs",
+    "bytes": 6168,
+    "sha256": "b0912a64d245ca899a5188b05955cd683e95bc18d2efd6f6a82836f128d0cb60",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/browser-guard.mjs",
+    "bytes": 1724,
+    "sha256": "c6fb865defe5a37bd94e3805b00311d4e8267daf92812e39f62b1213d947265e",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/browser-smoke-verdict.mjs",
+    "bytes": 4663,
+    "sha256": "5699614f7fa62515e25ba9cca6397db2770cf6feb9b973f3c19f2915874c53de",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/browser-smoke-verdict.test.mjs",
+    "bytes": 15643,
+    "sha256": "48b3924b41d606f94a9b8faae47ff350b84978fdd5ab3f6ca01640ed4c7087d7",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/browser-smoke.mjs",
+    "bytes": 6042,
+    "sha256": "2e1cc3136f33bd74b73b4b3dba812e74ac299c24893b9a7c406e9bbeaf46571f",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/check-auth-invariant.mjs",
+    "bytes": 4203,
+    "sha256": "d712203c4bc92c197c342e5c91660fc5a141a31171f22f35c505a0bff45f98ee",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/check-auth-invariant.test.mjs",
+    "bytes": 5086,
+    "sha256": "4d1682383c256215d082cc9e78c61a3028638f5a8e5570d75e9f7f14f37f53f4",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/grok-pwa-plugin.mjs",
+    "bytes": 6615,
+    "sha256": "36331d0bc0664debb5068bd6869d3089dc41555b7770c9ccb577d8845958835c",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/grok-pwa-plugin.test.mjs",
+    "bytes": 16383,
+    "sha256": "2f7e1f2a3273adb6588f7cedc2099b4f145965d7ebc033718c5bd76a772f63de",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/grok-pwa-shared.d.mts",
+    "bytes": 3144,
+    "sha256": "99c8342319978d71ef3dea4989c05ecbf096946c39a255fa08f48b081a3e506b",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/grok-pwa-shared.mjs",
+    "bytes": 17675,
+    "sha256": "860da7df5e0e5698ccc0ed9def2eb981c2f396831c5523368d031ec740b88b9c",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/install-page.html",
+    "bytes": 5658,
+    "sha256": "5f8fe91f837db8d74d68db5e057948918bd9299e097700e0bd18f1cf5f94e586",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/migrate.mjs",
+    "bytes": 3181,
+    "sha256": "e1a31c8046a099df37b4bcbcafa4f4f7d7d18b1f1f0dc6d79676d41c4be976be",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/migration-plan.mjs",
+    "bytes": 1525,
+    "sha256": "9305d8cfe8cdad73671065d675c89d0f20075d18c756f9aba5043b72e7c19a0d",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/migration-plan.test.mjs",
+    "bytes": 3558,
+    "sha256": "9787b5f5f1a7057db94f0a5a8c89abf6ec569fd22d26f99be1c248a2a9f0c082",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/preview-thumbnail.mjs",
+    "bytes": 1762,
+    "sha256": "fd7263a1dd76f788c2b51e9381e1f1de1a58993fd94e01040285556cd38c0c40",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/sign-out-plan.mjs",
+    "bytes": 5971,
+    "sha256": "32ae072de23b5138bf849c344caf72ab2dab6cb4617ab9915db4e4f5b9c7e2f0",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/sign-out-plan.test.mjs",
+    "bytes": 8659,
+    "sha256": "1942e32f4b6a9d8b62733338b0f0e1a7d84ed278b4e6c4f24fa7616a3abc694e",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/with-app-env.mjs",
+    "bytes": 4188,
+    "sha256": "a4fbee5401eb51fa177553e58d4a9f2adad41eab4e038f44fcea42ed479d3517",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "scripts/with-app-env.test.mjs",
+    "bytes": 4583,
+    "sha256": "69f4f254215042691d0c6e9bfdddc5b579b1f3464beb45ff2ae4b6e4b72542dc",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "server/middleware/grok-pwa.ts",
+    "bytes": 3606,
+    "sha256": "340f1fed44355a61fefdaf29a752c524ac029afb00bea3f40cc996cdb289d2f8",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "server/virtual-grok-og-identity.d.ts",
+    "bytes": 262,
+    "sha256": "74847f2b2bade154ac07dabb239c4718a745c095df530e78b8f1ef9f053edfa2",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/account-icon.tsx",
+    "bytes": 4625,
+    "sha256": "dd12bbafa6c273f1e1cccac544804b95cb10a509ca2758c379ef4245f599527b",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/ad-slot.tsx",
+    "bytes": 956,
+    "sha256": "9acbdeef440c2d106c60699d09847921f12f6255b672245a8db05aa89896d437",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/click-bloom.tsx",
+    "bytes": 1110,
+    "sha256": "db087b2bbb2e9534636747371fd38ccfd298be666d97f19bda5b88663907469e",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/daybook-app.tsx",
+    "bytes": 90182,
+    "sha256": "f409e932497f5c000cb1ff48ce289a49288e94caeacae930a060ce2976d550c5",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/lock-screen.tsx",
+    "bytes": 2379,
+    "sha256": "7aeef1c64492771f608ae07001fdaae7f93f75adcb0c05bbfa636e4264275e00",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/logo.tsx",
+    "bytes": 362,
+    "sha256": "3c7928dd4fcec2f8b275484363bde81baca10f0faf675cdad692d23d7e355a82",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/otp-gate.tsx",
+    "bytes": 2945,
+    "sha256": "4b6ad2ba25461fe1a399d74ff3e26e99cc316a831f7b75f2f6ed65e2f175f11d",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/preview-host-bridge.tsx",
+    "bytes": 668,
+    "sha256": "e4277e80ce127e7305057fb280d03d0703c5c7115b17d2e2aecf000e4867555e",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/privacy-gate.tsx",
+    "bytes": 3433,
+    "sha256": "93c221b9f683e53ed8a291e472f9ba63e5677b268f387cbcd2abf81f9b045e5a",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/report-pie.tsx",
+    "bytes": 2411,
+    "sha256": "e5b523dbc7d17f8fe2b1b7a2a85b1f95eba1e3099003a771e000a06094c4df26",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/components/ui.tsx",
+    "bytes": 10399,
+    "sha256": "560bbb524a59d44d476c95de8fe44a26fb7453ccaf03f8a2c43c8d19102bc1a5",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/accounts.ts",
+    "bytes": 4163,
+    "sha256": "4ba6b3e42b41c2a153332847b1f7d9b0639cbb02dfff4a2b593d0c25f5aafebc",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/client.ts",
+    "bytes": 12388,
+    "sha256": "26d7d391ff59ca4f4a5382ae2c328776f3fc92cca7268be080c406abbd43856b",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/email-password.ts",
+    "bytes": 441,
+    "sha256": "2e19781482a5fa673ac0ff84e8adbfd47549d1ea1aa0a71bb9e159ab0ff1a103",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/gates.tsx",
+    "bytes": 3452,
+    "sha256": "31162fcdcd94a91e5436fde7b4db54aa502810fbb41fea3928a22a8972b8f86f",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/isolation.server.ts",
+    "bytes": 2386,
+    "sha256": "a4adf6a5d548e70a0be52d7efdc7433126028908072b47bf9f92135d9ee558a0",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/middleware.ts",
+    "bytes": 2462,
+    "sha256": "8dc37c4e9bd583f175402330d0952ef4d584c7410723cc2649c4046d5084bd80",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/pglite-dialect.ts",
+    "bytes": 4088,
+    "sha256": "bd66925574245cd47cdd98b5c068dd7b4ee4a51c9439e8421dc54c62fe7c4f50",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/popup.server.ts",
+    "bytes": 13559,
+    "sha256": "ef61c77065d1616145252df36ec58d17de896072d719cd2072edaa203ccabd1a",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/preview.ts",
+    "bytes": 1679,
+    "sha256": "d52a3654a5cef7e841cbca789fd106dc464ea55db574f02aa5d295b7350f8664",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/provider.tsx",
+    "bytes": 593,
+    "sha256": "4cbbc7f8cc1765788ad65455a33f64dcdafc6fe4ed1d13f90ccfa0ba4c13d1f3",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/providers.ts",
+    "bytes": 1486,
+    "sha256": "4acefac17931529bdeab053588a917b06e44abdb67a275a2ca1c7841080c6a78",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/server.ts",
+    "bytes": 12391,
+    "sha256": "1ae506816ae05895ac2e820e6d640fc3d636b493f24d727849b702edb261e386",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/use-current-user.ts",
+    "bytes": 3315,
+    "sha256": "a0cc4bd74b6da5b346b6bafc1aec58b9bf5cc0278264379b737b79a5cff1e482",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/auth/verify.server.ts",
+    "bytes": 3760,
+    "sha256": "9013f2d515f2f456157e87e8b9d7eb142600414cdb9adc033ec636a34d6e03af",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/categories.ts",
+    "bytes": 638,
+    "sha256": "e2b33d919691781e753948cbf060a63d36b2c2ce396c28e70e734fbc375a1d39",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/daybook-context.tsx",
+    "bytes": 27434,
+    "sha256": "f38e1b39e94371f9c4db8501b1c1581b432d17bc6cd417551985379df62aac39",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/db.ts",
+    "bytes": 9525,
+    "sha256": "8decf7689ff4833ad2f6f263eff9041dd2a68ce923824fa1d55ad620dea72e49",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/error-component.tsx",
+    "bytes": 796,
+    "sha256": "bfc6953c341f29fb75797e050a1271a5ae928f7f6fbce4b781a8c80b52523130",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/export.ts",
+    "bytes": 3800,
+    "sha256": "76dea6c909b828f8d4b2bfa07000f3963f1a2926e99ceaf219c9e5cd8f05e1df",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/fx.ts",
+    "bytes": 3569,
+    "sha256": "8817210174285fad8704b46f027d3fa60e282b0dcc0524a852cb195223662fc7",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/guest.ts",
+    "bytes": 2780,
+    "sha256": "78a8e2ad8e86227d06f698573eba9f2735ae65766a6e9a01d3f3566642711395",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/i18n.ts",
+    "bytes": 85546,
+    "sha256": "d684d9fd598271397ba8cd82f29251a49b847fe4410fb32222d8a3f2f6536689",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/image.ts",
+    "bytes": 991,
+    "sha256": "3ffd9e6177fdd9008df01158317cc9bd83ef353c393abe4f1a0252bf86ec84e8",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/local-db.ts",
+    "bytes": 4104,
+    "sha256": "28c6739682f8ee6513ddfd14cb33575390922b3d93ac343ef3e2b78d787138f9",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/lock.ts",
+    "bytes": 4122,
+    "sha256": "96648b2ba7f64b05b9166c77ffc43fe20139f4d983e9f4b8cf7e53abb204670b",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/multiplayer/index.ts",
+    "bytes": 169,
+    "sha256": "bcb96816a2135e315078e2e7d0eda5522579b0caf9e768dc6c34294e4fa49137",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/multiplayer/p2p.ts",
+    "bytes": 20579,
+    "sha256": "4d0d2492ac249a2cf267c8d2db7688b5a2c488ab640da7727c0f1b73c2e92f60",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/offline.ts",
+    "bytes": 5108,
+    "sha256": "3044c9bf370203af8f26585d1d0f890c5e3db28aa5f4123d70b8b9c8b212114d",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/og/site.json",
+    "bytes": 68,
+    "sha256": "6b828a66c6ac4f88b22c80fdb06ca9b0b5d8802c2da2937e1cf777d279a5d281",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/parse-voice.ts",
+    "bytes": 3355,
+    "sha256": "73076ffc6a206fde8446716f498c12cdf5411f1fed2864f7b402630541247f99",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/preview-embedder-origin.ts",
+    "bytes": 1855,
+    "sha256": "c2d5e1acc5653ff2abc08a5eeb5feb3331f4e3d7c751ec83d60dee83cf33a6ee",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/preview-host-bridge.ts",
+    "bytes": 8723,
+    "sha256": "3d3144d8da9eb395b863375a2ac9c02061ff08b318a49a56e66d3277e1b945ac",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/privacy.ts",
+    "bytes": 29257,
+    "sha256": "9ffc54ddb7625c54a0d8f731683d2492cf224b6a6e3c0499be1f87cafe362e10",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/projects.ts",
+    "bytes": 1322,
+    "sha256": "d2ec9863e495c53a2a020969f7e178e22ce6841bd1869805a86bb985f2bb5895",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/reports.ts",
+    "bytes": 9111,
+    "sha256": "d4933aeafd9c0da494db1a164e2420ebc1bf2c128f1cecd1feed6fa73e6b5d97",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/server/fx.ts",
+    "bytes": 893,
+    "sha256": "f7c8ba800b0a783e3cb0a6d873bec4eb66f97a2e78b490491db96aec40e24a3b",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/server/ledger.ts",
+    "bytes": 21992,
+    "sha256": "c3d6fb0f3a41cf68e3b294b75ea552e7aa3beea5d86697f076115379b4fb2dff",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/types.ts",
+    "bytes": 2780,
+    "sha256": "39a18d20e9f69363a1a7d856a3fef8add6fbee60fa6c15891ca2426d152b015e",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/use-fx.ts",
+    "bytes": 979,
+    "sha256": "e38682402ade6c3e7d17b6a42101042fbd0c40215bcbf98c3af303e4eec1901e",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/lib/utils.ts",
+    "bytes": 1936,
+    "sha256": "b1b9644402a8a1ea68297024a4867483dbe5a74edb872c2ce831d5391fa4d24f",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/routeTree.gen.ts",
+    "bytes": 2973,
+    "sha256": "3717d9e1337bbf9ddfbd6377f0324b1397c3bc72b6f892515ccbb0408d021a48",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/router.tsx",
+    "bytes": 272,
+    "sha256": "b3418d117d99e4e47f8c26f90eaa972b3732214b133a7052591e6b2907090752",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/routes/__root.tsx",
+    "bytes": 2064,
+    "sha256": "6c925dbd2058bbc38cf828a3cfe32410ff0992e16107cd68a408b69bc1c3560d",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/routes/api/auth/$.ts",
+    "bytes": 302,
+    "sha256": "58e2a72c3dc0b3bb3c40cccbbecbe9205779ea13c5fb9a31bb0f9a3ba253fb26",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/routes/index.tsx",
+    "bytes": 1321,
+    "sha256": "16d142aabbdd6976b214e31092d1a9ddf4aad0fc8ba025a18a313e7b970f3988",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/routes/login.tsx",
+    "bytes": 6443,
+    "sha256": "b48b05e0a9b6fc8a6230b937e483ba8fcf22ce5d04358b6853ed62b8966b20fb",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "src/styles.css",
+    "bytes": 14268,
+    "sha256": "4d3bffe78ec85dbb4c2f318f0c64e002fab389a4666ba1d451581c0bf710b89a",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "startup.sh",
+    "bytes": 153,
+    "sha256": "873a0beaeaca37c9633a9a553796bf8d24e851f7e7dde4c5dd2e3260488331f1",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "tsconfig.json",
+    "bytes": 602,
+    "sha256": "da8efa3303d729fcf97a8de11c27078d5fcf6c69f75c6951110303b470f2827f",
+    "review_scope": "source/config/test; static audit"
+  },
+  {
+    "path": "vite.config.ts",
+    "bytes": 6750,
+    "sha256": "5451c22b17e7d8408674909b3d231f0ae4a4d017b740491ce7df008d961a7eee",
+    "review_scope": "source/config/test; static audit"
+  }
+]

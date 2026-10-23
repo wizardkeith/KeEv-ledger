@@ -1,0 +1,16 @@
+00:00 +0: loading /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart
+00:00 +0: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: Currency precision and strict codes
+00:00 +1: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: Money stores exact minor units, zero and signed operations
+00:00 +2: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: Mixed currencies cannot add, subtract or compare
+00:00 +3: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: BigInt intermediate arithmetic rejects SQLite integer overflow
+00:00 +4: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: HALF-EVEN works symmetrically at ties, non-ties and zero
+00:00 +5: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: FX major ratio stays exact; rounds once into target minor units
+00:00 +6: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: FX normalization, validation and overflow
+00:00 +7: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: Offline IDs are canonical, independent and stable values
+00:00 +8: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/core_data_test.dart: Clock boundary returns a deterministic UTC instant
+00:00 +9: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/local_database_test.dart: Empty file creates v1 schema with FK enforcement
+00:00 +10: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/local_database_test.dart: Local profile persists offline with stable ID and UTC timestamps
+00:00 +11: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/local_database_test.dart: Singleton constraint preserves the existing identity
+00:00 +12: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/local_database_test.dart: SQLite constraints reject invalid currency, slot and timestamps
+00:00 +13: /workspace/scratch/04d15a94f470/keev-ledger/test/unit/local_database_test.dart: Typed failure and exception both roll back all prior writes
+00:00 +14: All tests passed!

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_DOCUMENT_CHECKS_ONLY",
+  "required_docs": 15,
+  "required_docs_present": 15,
+  "original_archive_files_unchanged": 377,
+  "characterization_observations_reproduced": 12,
+  "logo_byte_identical": true,
+  "markdown_links_and_fences": "checked",
+  "flutter_analyze": "BLOCKED",
+  "flutter_test": "BLOCKED",
+  "android_build": "NOT_RUN",
+  "ios_build": "NOT_RUN"
+}

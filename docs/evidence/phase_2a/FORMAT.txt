@@ -1,0 +1,10 @@
+Formatted lib/core/currency.dart
+Formatted lib/core/exact_fx_rate.dart
+Formatted lib/core/money.dart
+Formatted lib/features/local_profile/data/drift_local_profile_repository.dart
+Formatted test/unit/core_data_test.dart
+Formatted test/unit/local_database_test.dart
+Formatted 41 files (6 changed) in 0.11 seconds.
+Formatted lib/features/local_profile/data/drift_local_profile_repository.dart
+Formatted test/unit/local_database_test.dart
+Formatted 12 files (2 changed) in 0.03 seconds.

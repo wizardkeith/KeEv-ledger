@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "fonts": {
+    "Plus Jakarta Sans": {
+      "asset": "PlusJakartaSans.ttf",
+      "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8",
+      "weight_axis": [
+        200,
+        800
+      ],
+      "digit_advances_equal_at_default": false,
+      "has_tnum_feature": true,
+      "licence": "SIL OFL 1.1"
+    },
+    "Noto Sans HK": {
+      "asset": "NotoSansHK.ttf",
+      "sha256": "76098ee78ec234cd4f8c950742b3f766fea2f8b43d5180d901048f4fc86c6849",
+      "weight_axis": [
+        100,
+        900
+      ],
+      "digit_advances_equal_at_default": true,
+      "has_tnum_feature": false,
+      "licence": "SIL OFL 1.1"
+    },
+    "Noto Sans SC": {
+      "asset": "NotoSansSC.ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "weight_axis": [
+        100,
+        900
+      ],
+      "digit_advances_equal_at_default": true,
+      "has_tnum_feature": false,
+      "licence": "SIL OFL 1.1"
+    },
+    "Noto Sans JP": {
+      "asset": "NotoSansJP.ttf",
+      "sha256": "c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f",
+      "weight_axis": [
+        100,
+        900
+      ],
+      "digit_advances_equal_at_default": true,
+      "has_tnum_feature": false,
+      "licence": "SIL OFL 1.1"
+    },
+    "Noto Sans Thai": {
+      "asset": "NotoSansThai.ttf",
+      "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+      "weight_axis": [
+        100,
+        900
+      ],
+      "digit_advances_equal_at_default": true,
+      "has_tnum_feature": false,
+      "licence": "SIL OFL 1.1"
+    }
+  },
+  "mixed_samples": [
+    "HK$ 12,580.50 餐飲",
+    "支付寶 Alipay ¥1,280",
+    "Amazon JP ¥8,900",
+    "ร้านอาหาร HK$350",
+    "東京 Metro ¥220",
+    "KeEv Ledger 交易紀錄",
+    "Visa •••• 1234",
+    "USD 1,250.75",
+    "THB 3,450.00"
+  ],
+  "missing_sample_glyphs": []
+}

@@ -1,0 +1,17 @@
+[functions.verify-purchase]
+verify_jwt = true
+
+[functions.refresh-entitlements]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+[functions.apple-store-notifications]
+verify_jwt = false
+
+[functions.google-play-rtdn]
+verify_jwt = false
+
+[functions.billing-reconcile]
+verify_jwt = false

@@ -1,0 +1,11 @@
+# Phase 3A planning data
+
+Schema **v4** adds `budgets`, `projects`, and a nullable `project_id` foreign key on income/expense transactions. The reviewed v3→v4 migration preserves profiles, accounts, categories, transactions and transfers; historical transactions remain valid with no project. Projects are archived rather than deleted, so prior assignments retain meaning. One optional primary Project is implemented; multi-tagging is deferred.
+
+A Budget has a stable ID, local-profile owner, name, non-negative integer-minor-unit `Money`, explicit currency, `yyyy-MM` business period, optional expense-category scope, 1–100 warning threshold (default 80), archive state and UTC technical timestamps. The period is `[first day, first day of next month)`. Progress derives from active expense entries only: income, transfers, card-payment transfers, out-of-period entries, unrelated categories and tombstoned entries do not consume it. Remaining may be negative; zero-budget progress has no percentage and is deliberately not encoded as an unknown zero.
+
+Cross-currency totals never sum nominal values or assume 1:1. When a unique same-business-date cross-currency transfer supplies an exact implied rational rate, the existing `ExactFxRate` converts with HALF-EVEN rounding. With no rate, or conflicting rates, the calculated known subtotal remains visible and the result is explicitly incomplete with its missing currencies. No network/live FX service or mutable aggregate counter is added.
+
+A Project has a stable ID, local-profile owner, name, optional description, archive state and UTC timestamps. Income/expense entries may reference one Project or none; transfers have no Project and never affect Project income/expense/net. Summaries use the local profile's base currency and the same complete/incomplete FX rule. Quick Add exposes only the optional Project selector for income/expense.
+
+Domain models and repository contracts remain Drift-free. `PlanningService` owns create/list/archive/assignment and calculation use cases; Drift repositories perform explicit row mapping and relationship validation. Budget and Project screens use only application-facing APIs. Reports, exports, tags, live FX, recurrence/rollover and cloud behavior remain deferred.

@@ -1,0 +1,3 @@
+Formatted test/widget/typography_test.dart
+Formatted tools/capture_typography_test.dart
+Formatted 27 files (2 changed) in 0.05 seconds.

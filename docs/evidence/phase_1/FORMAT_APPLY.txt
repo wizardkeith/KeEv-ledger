@@ -1,0 +1,3 @@
+Formatted lib/features/settings/application/settings_controller.dart
+Formatted lib/features/settings/presentation/settings_screens.dart
+Formatted 26 files (2 changed) in 0.06 seconds.

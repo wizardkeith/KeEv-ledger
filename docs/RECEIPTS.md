@@ -1,0 +1,13 @@
+# Phase 4A local receipt attachments
+
+Receipt photos are optional and apply to Income/Expense transactions only. `ReceiptAttachment` holds stable IDs, profile/transaction ownership, an app-controlled storage key, JPEG MIME type, byte size, SHA-256 integrity value, order (0–4), and UTC creation time. SQLite schema v5 stores this metadata; image bytes are never stored as Base64, text, or BLOBs.
+
+`ImagePickerReceiptAcquirer` invokes the native camera or photo picker only after the user selects the corresponding Quick Add action. Cancellation is a successful no-op. iOS declares contextual camera/photo usage descriptions. Android uses the plugin's native picker/camera intents and declares no legacy or broad storage permission. Real permission dialogs and camera/gallery flows remain unverified in this Linux environment.
+
+`LocalReceiptFileStore` copies from, but never changes or deletes, the picker/library source. It validates existence and a 30 MiB source processing bound, decodes content rather than trusting the extension, bakes orientation, caps the long edge at 2048 px, and encodes a new JPEG at bounded quality up to 10 MiB. Re-encoding supported inputs from decoded pixels omits original EXIF blocks, including embedded location metadata; this claim applies to the app-owned processed JPEG, not the user's original.
+
+The filesystem/SQLite sequence is recoverable rather than described as ACID: process to `<uuid>.pending`, flush, rename to `<uuid>.jpg`, then associate metadata. A metadata failure deletes the prepared file; a multi-attachment Quick Add failure removes created metadata/files and tombstones the newly created bookkeeping entry, so retry cannot leave two active transactions. Reconciliation at production shell entry removes recognized abandoned staging files and unreferenced app-owned receipt files, and removes metadata whose referenced file is missing. Unknown files are never deleted. Removal deletes metadata first and then its app-owned file; any interrupted orphan is handled by reconciliation.
+
+The repository and database enforce a maximum of five attachments per transaction. Existing transaction rows may receive attachments through `ReceiptService.attach`; History provides basic view and removal controls. Full transaction editing remains deferred. A future general transaction-delete UI must orchestrate attachment purge with the existing tombstone operation; Phase 4A does not add that broader delete screen.
+
+All behavior is Local Only. No receipt content or metadata is uploaded, analyzed, sent to OCR/AI, analytics, authentication, or cloud services. OCR, cloud backup/sync, voice, and PIN/biometrics remain deferred.

@@ -1,0 +1,3 @@
+00:00 +0: loading /workspace/scratch/04d15a94f470/keev-ledger/tools/capture_shell_test.dart
+00:00 +0: Capture rendered shell for review
+00:02 +1: All tests passed!
