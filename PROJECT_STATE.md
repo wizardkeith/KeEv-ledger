@@ -1,6 +1,6 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T00:39:30+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-24T00:41:22+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
@@ -15,7 +15,7 @@ Last updated: **2026-10-24T00:39:30+08:00** (Asia/Hong_Kong).
 - Full source import: [f7cb8d5f385393c7fdccc61f0dad80554572ba9f](https://github.com/wizardkeith/KeEv-ledger/commit/f7cb8d5f385393c7fdccc61f0dad80554572ba9f).
 - Verified all **523 files** against the prepared source: every Git blob hash, byte size and file mode matched, and `main` was confirmed at the import commit. This status follow-up changes documentation only.
 - The oversized original Noto Sans SC font was transferred compressed, restored with SHA-256 and Git blob checks, and committed unchanged. The temporary import workflow and compressed transfer file are absent from the completed source tree.
-- The retained quality-gate workflow started automatically for the source import: [GitHub Actions run 39988480789](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39988480789). It was **in progress** at the update time above; no fresh passing build or test result is claimed here. Check the linked run before reporting its current result.
+- The retained quality-gate workflow ran automatically for the source import: [GitHub Actions run 39988480789](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39988480789). It **failed at the Dart formatting check**. Pinned Flutter installation, locked dependency installation, localization generation and build_runner succeeded. The formatter checked 176 files and reported 21 that need formatting, exiting with code 1. `flutter analyze`, `flutter test` and the Android debug build were consequently skipped. No fresh passing test or native-build result is claimed. Application source was preserved during this import; the formatting correction remains pending.
 - This is a verified one-time source import. Future local changes still need to be committed and pushed; ongoing synchronization is not configured.
 
 ## Verified during this import
@@ -35,8 +35,8 @@ Unsigned AAB SHA-256: `0FC19E6CBE976D3A7B42EBF1DD0AF1B3AB12ADA5708BD0EA63EC42D0E
 ## Next steps
 
 1. Connect this repository to the intended Codex Cloud environment and prepare the pinned Flutter/Android tools.
-2. Run that environment's setup/verification and record its actual results, task link, branch and commit here.
-3. Have Evana read this canonical record and hand it to future delegated work. A GitHub import does not itself connect Evana or create a Cloud environment.
+2. Address the recorded formatting failure with the pinned Dart formatter, review the resulting diff, and commit that correction separately from the source import. Keep the quality gate enabled. Rerun it and record actual analyze/test/build results; the later steps have not yet run in this GitHub check.
+3. Record the environment setup/verification, task link, branch and commit here. Have Evana read this canonical record and hand it to future delegated work. A GitHub import does not itself connect Evana or create a Cloud environment.
 4. Continue only the owner's requested development scope. Signing, store setup, device acceptance and iOS build acceptance remain listed in [release blockers](docs/RELEASE_BLOCKERS.md).
 
 ## Handoff rule
