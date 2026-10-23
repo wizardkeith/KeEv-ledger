@@ -6,8 +6,12 @@ The source archive contains 532 files. This import retains 519 original source f
 
 Historical `CHECKPOINT_SHA256.json` and other phase manifests remain evidence for their original checkpoints. They are not claims about the current Git tree.
 
-The original native-build evidence was inspected during recovery. Its final test log has 322 successful testDone events, zero skipped events, and done.success=true. Analyze/build/lint/alignment results are historical records from that gate, not executions performed during this import. No fresh Flutter or native build was run for a source-transfer-only task.
+The original native-build evidence was inspected during recovery. Its final test log has 322 successful testDone events, zero skipped events, and done.success=true. Analyze/build/lint/alignment results are historical records from that gate, not executions performed in the recovery workspace. The retained GitHub quality gate started automatically after the import; its separate run is linked in PROJECT_STATE.md and must not be confused with those historical results.
 
 Required five font files and their five OFL licences are included. Real environment values, signing keys, customer/user databases and build binaries are not included. The published unsigned APK/AAB are separately retained artifacts.
 
 Source transfer does not automatically create Codex Cloud environments, connect Evana to a computer, enable ongoing synchronization, or publish the app. Use `PROJECT_STATE.md` as the shared progress entry.
+
+## Remote transfer verification
+
+The complete import commit is `f7cb8d5f385393c7fdccc61f0dad80554572ba9f`. All 523 prepared files matched the remote Git tree by path, blob hash, byte size and executable mode, and `main` was read back after publication of the commit. The source's original Noto Sans SC font exceeded the connector's single-request transport size; a temporary, hash-checked GitHub Actions import restored its exact bytes from an XZ transfer. Both temporary transfer files were removed from the completed source tree. This did not replace, subset or modify the font.

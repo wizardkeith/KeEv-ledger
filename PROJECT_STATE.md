@@ -1,6 +1,6 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T00:27:03+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-24T00:39:30+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
@@ -8,7 +8,15 @@ Last updated: **2026-10-24T00:27:03+08:00** (Asia/Hong_Kong).
 - Shared status: this file on `main`. Read its current remote version before answering progress questions.
 - Source baseline: `KeEv_Ledger_Phase_11_Native_Build_Fix_Gate_Complete.tar.xz`, delivered 25 September 2026 HKT.
 - Current phase: **Phase 11 Native Build Fix Gate Complete**. No Phase 12 implementation was performed by this import.
-- Current work: initial source recovery and GitHub synchronization. No new Evana/Codex Cloud task has been configured by this repository import.
+- Current work: initial source recovery and GitHub synchronization completed on `main`. No new Evana/Codex Cloud task has been configured by this repository import.
+
+## Completed GitHub synchronization
+
+- Full source import: [f7cb8d5f385393c7fdccc61f0dad80554572ba9f](https://github.com/wizardkeith/KeEv-ledger/commit/f7cb8d5f385393c7fdccc61f0dad80554572ba9f).
+- Verified all **523 files** against the prepared source: every Git blob hash, byte size and file mode matched, and `main` was confirmed at the import commit. This status follow-up changes documentation only.
+- The oversized original Noto Sans SC font was transferred compressed, restored with SHA-256 and Git blob checks, and committed unchanged. The temporary import workflow and compressed transfer file are absent from the completed source tree.
+- The retained quality-gate workflow started automatically for the source import: [GitHub Actions run 39988480789](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39988480789). It was **in progress** at the update time above; no fresh passing build or test result is claimed here. Check the linked run before reporting its current result.
+- This is a verified one-time source import. Future local changes still need to be committed and pushed; ongoing synchronization is not configured.
 
 ## Verified during this import
 
