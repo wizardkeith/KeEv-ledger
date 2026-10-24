@@ -233,14 +233,26 @@ class SettingsScreen extends StatelessWidget {
                 adsController: adsController,
               ),
             ),
-          if (configuredLegalUrl('PRIVACY_POLICY_URL') != null || !const bool.fromEnvironment('dart.vm.product')) ListTile(
-            title: Text(l.privacyPolicy),
-            onTap: () => showLegal(context, l.privacyPolicy, url: configuredLegalUrl('PRIVACY_POLICY_URL')),
-          ),
-          if (configuredLegalUrl('TERMS_URL') != null || !const bool.fromEnvironment('dart.vm.product')) ListTile(
-            title: Text(l.terms),
-            onTap: () => showLegal(context, l.terms, url: configuredLegalUrl('TERMS_URL')),
-          ),
+          if (configuredLegalUrl('PRIVACY_POLICY_URL') != null ||
+              !const bool.fromEnvironment('dart.vm.product'))
+            ListTile(
+              title: Text(l.privacyPolicy),
+              onTap: () => showLegal(
+                context,
+                l.privacyPolicy,
+                url: configuredLegalUrl('PRIVACY_POLICY_URL'),
+              ),
+            ),
+          if (configuredLegalUrl('TERMS_URL') != null ||
+              !const bool.fromEnvironment('dart.vm.product'))
+            ListTile(
+              title: Text(l.terms),
+              onTap: () => showLegal(
+                context,
+                l.terms,
+                url: configuredLegalUrl('TERMS_URL'),
+              ),
+            ),
           const SizedBox(height: 16),
           Text(l.sessionNotice),
         ],

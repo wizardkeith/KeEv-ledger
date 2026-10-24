@@ -55,7 +55,8 @@ final class PurchaseController extends ChangeNotifier {
   void resumed() {
     final now = DateTime.now();
     if (_lastForegroundRefresh != null &&
-        now.difference(_lastForegroundRefresh!) < const Duration(minutes: 5)) return;
+        now.difference(_lastForegroundRefresh!) < const Duration(minutes: 5))
+      return;
     _lastForegroundRefresh = now;
     unawaited(refreshEntitlements());
   }
@@ -110,7 +111,10 @@ final class PurchaseController extends ChangeNotifier {
     if (account == null || _entitlementRemote == null) return;
     try {
       final verified = await _entitlementRemote.refresh(account);
-      if (_accountId() != account || verified == null || verified.accountId != account) return;
+      if (_accountId() != account ||
+          verified == null ||
+          verified.accountId != account)
+        return;
       _verified = verified.permitsAdsRemoval ? verified : null;
       _verifiedAccount = _verified == null ? null : account;
       status = verified.status;
@@ -367,7 +371,8 @@ final class PurchaseController extends ChangeNotifier {
           result.outcome != VerificationOutcome.unavailable &&
           result.outcome != VerificationOutcome.pending &&
           result.outcome != VerificationOutcome.accountMismatch &&
-          !(bound.platform == StoreKind.google && result.acknowledgementPending)) {
+          !(bound.platform == StoreKind.google &&
+              result.acknowledgementPending)) {
         try {
           if (!await _store.complete(bound)) {
             failure = PurchaseFailure.completionFailed;
@@ -380,8 +385,8 @@ final class PurchaseController extends ChangeNotifier {
       }
       if (!result.acknowledgementPending &&
           (result.outcome == VerificationOutcome.verified ||
-          result.outcome == VerificationOutcome.inactive ||
-          result.outcome == VerificationOutcome.rejected)) {
+              result.outcome == VerificationOutcome.inactive ||
+              result.outcome == VerificationOutcome.rejected)) {
         await _journal.remove(bound.key);
         _processed.add(bound.key);
       }

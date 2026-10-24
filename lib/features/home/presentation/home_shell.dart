@@ -58,10 +58,7 @@ class _HomeShellState extends State<HomeShell> {
         onAdd: _add,
       ),
       child: selected == 1
-          ? HistoryView(
-              key: ValueKey(historyRevision),
-              session: widget.runtime,
-            )
+          ? HistoryView(key: ValueKey(historyRevision), session: widget.runtime)
           : selected == 3
           ? ListView(
               key: PageStorageKey(selected),

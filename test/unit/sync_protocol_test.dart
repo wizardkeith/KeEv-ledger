@@ -355,9 +355,8 @@ void main() {
     expect(backup, contains('grant select, insert, delete'));
     expect(backup, isNot(contains('grant update')));
 
-    final sql = File(
-      'supabase/migrations/202609220001_sync_protocol_v1.sql',
-    ).readAsStringSync();
+    final sql = File('supabase/migrations/202609220001_sync_protocol_v1.sql')
+        .readAsStringSync();
     for (final table in [
       'sync_profiles',
       'sync_accounts',
@@ -437,18 +436,18 @@ void main() {
     final source = File(
       'lib/features/sync/infrastructure/supabase_sync_remote_store.dart',
     ).readAsStringSync();
-    final domain = File(
-      'lib/features/sync/domain/sync_protocol.dart',
-    ).readAsStringSync();
+    final domain = File('lib/features/sync/domain/sync_protocol.dart')
+        .readAsStringSync();
     expect(source, contains('required int throughSequence'));
     expect(source, contains(".lte('server_revision', throughSequence)"));
     expect(domain, contains('serverRevision > throughSequence'));
   });
 
   test('final parity migration releases tombstoned receipt positions', () {
-    final base = File(
-      'supabase/migrations/202609220001_sync_protocol_v1.sql',
-    ).readAsStringSync().replaceAll(RegExp(r'\s+'), ' ').toLowerCase();
+    final base = File('supabase/migrations/202609220001_sync_protocol_v1.sql')
+        .readAsStringSync()
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .toLowerCase();
     final sql = File(
       'supabase/migrations/202609220003_sync_protocol_v1_final_parity.sql',
     ).readAsStringSync().replaceAll(RegExp(r'\s+'), ' ').toLowerCase();

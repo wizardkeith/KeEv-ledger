@@ -11,8 +11,15 @@ void main() {
   ).readAsStringSync();
   final bootstrap = File('lib/app/bootstrap.dart').readAsStringSync();
   test('authenticated Supabase adapter invokes narrow functions', () {
-    expect(remote, contains("client.functions.invoke('verify-purchase'"));
-    expect(remote, contains("client.functions.invoke('refresh-entitlements'"));
+    // The formatter may put the first argument on a separate line.
+    expect(
+      remote,
+      matches(RegExp(r"client\.functions\.invoke\(\s*'verify-purchase'")),
+    );
+    expect(
+      remote,
+      matches(RegExp(r"client\.functions\.invoke\(\s*'refresh-entitlements'")),
+    );
     expect(remote, contains('client.auth.currentUser?.id == accountId'));
     expect(remote, isNot(contains('SERVICE_ROLE_KEY')));
   });

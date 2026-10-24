@@ -42,28 +42,41 @@ class AccountCloudScreen extends StatefulWidget {
 class _AccountCloudScreenState extends State<AccountCloudScreen> {
   Future<void> _deleteAccount() async {
     final strings = AccountDeletionStrings.of(context);
-    final confirmed = await showDialog<bool>(context: context, builder: (dialogContext) =>
-      AlertDialog(
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
         title: Text(strings.title),
         content: SingleChildScrollView(child: Text(strings.warning)),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(dialogContext, false), child: Text(strings.cancel)),
-          TextButton(key: const Key('confirm-cloud-account-deletion'),
-            onPressed: () => Navigator.pop(dialogContext, true), child: Text(strings.confirm)),
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(strings.cancel),
+          ),
+          TextButton(
+            key: const Key('confirm-cloud-account-deletion'),
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: Text(strings.confirm),
+          ),
         ],
-      ));
+      ),
+    );
     if (confirmed != true || !mounted) return;
     final result = await widget.controller.deleteAccount();
     if (result is Success<void>) await widget.syncController?.unlink();
     if (!mounted) return;
     if (result is Failure<void> &&
-        result.code == FailureCode.cloudAuthenticationCancelled) return;
-    final message = result is Success<void> ? strings.done :
-        result is Failure<void> && result.code == FailureCode.sessionExpired
-          ? strings.reauthenticate :
-        result is Failure<void> && result.code == FailureCode.authenticationProviderFailure
-          ? strings.appleReauthenticate : strings.failed;
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+        result.code == FailureCode.cloudAuthenticationCancelled)
+      return;
+    final message = result is Success<void>
+        ? strings.done
+        : result is Failure<void> && result.code == FailureCode.sessionExpired
+        ? strings.reauthenticate
+        : result is Failure<void> &&
+              result.code == FailureCode.authenticationProviderFailure
+        ? strings.appleReauthenticate
+        : strings.failed;
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(message)));
   }
 
   @override
@@ -75,7 +88,9 @@ class _AccountCloudScreenState extends State<AccountCloudScreen> {
       final localOnly = controller.state == AccountSessionState.localOnly;
       final authenticated =
           controller.state == AccountSessionState.authenticated;
-      final busy = controller.state == AccountSessionState.authenticating || controller.deletingAccount;
+      final busy =
+          controller.state == AccountSessionState.authenticating ||
+          controller.deletingAccount;
       final maySignIn = controller.isCloudConfigured && !busy;
       return KeEvScaffold(
         title: l.authentication,
@@ -104,17 +119,22 @@ class _AccountCloudScreenState extends State<AccountCloudScreen> {
             ),
             const SizedBox(height: 16),
             if (authenticated)
-              Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                KeEvSecondaryButton(
-                  key: const Key('cloud-sign-out'),
-                  label: l.signOut,
-                  onPressed: busy ? null : controller.signOut,
-                ),
-                const SizedBox(height: 12),
-                TextButton(key: const Key('delete-cloud-account'),
-                  onPressed: busy ? null : _deleteAccount,
-                  child: Text(AccountDeletionStrings.of(context).title)),
-              ])
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  KeEvSecondaryButton(
+                    key: const Key('cloud-sign-out'),
+                    label: l.signOut,
+                    onPressed: busy ? null : controller.signOut,
+                  ),
+                  const SizedBox(height: 12),
+                  TextButton(
+                    key: const Key('delete-cloud-account'),
+                    onPressed: busy ? null : _deleteAccount,
+                    child: Text(AccountDeletionStrings.of(context).title),
+                  ),
+                ],
+              )
             else ...[
               Text(l.cloudOptionalDescription),
               const SizedBox(height: 16),
@@ -184,8 +204,9 @@ class _AccountCloudScreenState extends State<AccountCloudScreen> {
                   trailing: const Icon(Icons.chevron_right),
                   onTap: () => Navigator.of(context).push<void>(
                     MaterialPageRoute(
-                      builder: (_) =>
-                        SyncSettingsScreen(controller: widget.syncController!),
+                      builder: (_) => SyncSettingsScreen(
+                        controller: widget.syncController!,
+                      ),
                     ),
                   ),
                 ),

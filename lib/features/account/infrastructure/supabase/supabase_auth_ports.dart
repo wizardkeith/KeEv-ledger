@@ -14,6 +14,7 @@ final class ProviderCredential {
   final String idToken;
   final String? accessToken;
   final String? rawNonce;
+
   /// Ephemeral, single-use Apple code; never stored with the KeEv session.
   final String? authorizationCode;
   final String? displayName;

@@ -117,31 +117,25 @@ void main() {
     expect(_incrementalPullAllowed(cursor: 50, floor: 100), isFalse);
   });
 
-  test(
-    'retention safety migration resets generation ack and gates history',
-    () async {
-      final sql = await File(
-        'supabase/migrations/202609230006_sync_retention_safety_v1.sql',
-      ).readAsString();
-      expect(sql, contains('history_floor_revision bigint not null default 0'));
-      expect(
-        sql,
-        contains(
-          'when public.sync_device_registrations.generation=excluded.generation',
-        ),
-      );
-      expect(sql, contains('else excluded.acknowledged_revision'));
-      expect(sql, contains('if p_after_sequence<v_floor then'));
-      expect(sql, contains("'reason','HISTORY_UNAVAILABLE'"));
-      expect(
-        sql,
-        contains('pg_catalog.greatest(history_floor_revision,v_safe)'),
-      );
-      expect(sql, contains("interval '180 days'"));
-      expect(sql, contains("interval '365 days'"));
-      expect(sql, contains('from public,anon,authenticated'));
-    },
-  );
+  test('retention safety migration resets generation ack and gates history', () async {
+    final sql = await File(
+      'supabase/migrations/202609230006_sync_retention_safety_v1.sql',
+    ).readAsString();
+    expect(sql, contains('history_floor_revision bigint not null default 0'));
+    expect(
+      sql,
+      contains(
+        'when public.sync_device_registrations.generation=excluded.generation',
+      ),
+    );
+    expect(sql, contains('else excluded.acknowledged_revision'));
+    expect(sql, contains('if p_after_sequence<v_floor then'));
+    expect(sql, contains("'reason','HISTORY_UNAVAILABLE'"));
+    expect(sql, contains('pg_catalog.greatest(history_floor_revision,v_safe)'));
+    expect(sql, contains("interval '180 days'"));
+    expect(sql, contains("interval '365 days'"));
+    expect(sql, contains('from public,anon,authenticated'));
+  });
 
   test(
     'stale device reconciles instead of partially applying newer history',

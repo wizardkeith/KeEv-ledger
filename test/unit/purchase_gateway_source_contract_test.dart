@@ -17,7 +17,10 @@ void main() {
     );
   });
   test('store period and selected Play offer come from native metadata', () {
-    expect(source, matches(RegExp(r'sk2Product\.subscription\?\.subscriptionPeriod')));
+    expect(
+      source,
+      matches(RegExp(r'sk2Product\.subscription\?\.subscriptionPeriod')),
+    );
     expect(source, contains('offer.pricingPhases.reversed'));
     expect(source, contains('phase.billingPeriod'));
     expect(source, contains('offerToken: product.offerId'));

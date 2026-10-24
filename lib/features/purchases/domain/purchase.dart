@@ -162,7 +162,11 @@ enum VerificationOutcome {
 }
 
 final class VerificationResult {
-  const VerificationResult(this.outcome, {this.entitlement, this.acknowledgementPending = false});
+  const VerificationResult(
+    this.outcome, {
+    this.entitlement,
+    this.acknowledgementPending = false,
+  });
   final VerificationOutcome outcome;
   final VerifiedEntitlement? entitlement;
   final bool acknowledgementPending;

@@ -131,10 +131,9 @@ void main() {
       payload: receiptSnapshot(const [7, 7, 7]),
     );
     final store = DriftSyncStateStore(db, clock: clock);
-    final create =
-        (await store.nextDueMutation(clock.nowUtc())
-                as Success<PendingSyncMutation?>)
-            .value!;
+    final create = (await store.nextDueMutation(
+      clock.nowUtc(),
+    ) as Success<PendingSyncMutation?>).value!;
     await store.markAttemptStarted(create.mutationId, clock.nowUtc());
     await capture.capture(
       entityType: SyncEntityType.receiptAttachment,
@@ -213,10 +212,9 @@ void main() {
       expect(rows.first.baseServerVersion, 0);
       expect(rows.last.baseServerVersion, isNull);
       final store = DriftSyncStateStore(db, clock: clock);
-      final first =
-          (await store.nextDueMutation(clock.nowUtc())
-                  as Success<PendingSyncMutation?>)
-              .value!;
+      final first = (await store.nextDueMutation(
+        clock.nowUtc(),
+      ) as Success<PendingSyncMutation?>).value!;
       await store.acknowledgeMutation(
         first,
         const SyncMutationResult(
@@ -242,16 +240,14 @@ void main() {
       payload: const {'name': 'stable'},
     );
     final store = DriftSyncStateStore(db, clock: clock);
-    final pending =
-        (await store.nextDueMutation(clock.nowUtc())
-                as Success<PendingSyncMutation?>)
-            .value!;
+    final pending = (await store.nextDueMutation(
+      clock.nowUtc(),
+    ) as Success<PendingSyncMutation?>).value!;
     await store.markAttemptStarted(pending.mutationId, clock.nowUtc());
     await store.recoverInterruptedProcessing();
-    final retried =
-        (await store.nextDueMutation(clock.nowUtc())
-                as Success<PendingSyncMutation?>)
-            .value!;
+    final retried = (await store.nextDueMutation(
+      clock.nowUtc(),
+    ) as Success<PendingSyncMutation?>).value!;
     expect(retried.mutationId, pending.mutationId);
     expect(retried.payload, pending.payload);
     expect(retried.baseServerVersion, pending.baseServerVersion);
@@ -428,9 +424,9 @@ void main() {
   );
 
   test('runtime SQL stores exact immutable events and least privilege', () {
-    final sql = File(
-      'supabase/migrations/202609230001_sync_runtime_v1.sql',
-    ).readAsStringSync().toLowerCase();
+    final sql = File('supabase/migrations/202609230001_sync_runtime_v1.sql')
+        .readAsStringSync()
+        .toLowerCase();
     expect(sql, contains('add column payload jsonb'));
     expect(sql, contains('add column mutation_id uuid'));
     expect(sql, contains('add column origin_device_id uuid'));
@@ -822,10 +818,9 @@ void main() {
         payload: receiptSnapshot(bytes),
       );
       final store = DriftSyncStateStore(db, clock: clock);
-      final create =
-          (await store.nextDueMutation(clock.nowUtc())
-                  as Success<PendingSyncMutation?>)
-              .value!;
+      final create = (await store.nextDueMutation(
+        clock.nowUtc(),
+      ) as Success<PendingSyncMutation?>).value!;
       await store.markAttemptStarted(create.mutationId, clock.nowUtc());
       await capture.capture(
         entityType: SyncEntityType.receiptAttachment,
@@ -867,9 +862,8 @@ void main() {
         operation: SyncOperation.create,
         payload: receiptSnapshot(bytes),
       );
-      await File(
-        '${root.path}/spool/$attachmentId.jpg',
-      ).writeAsBytes(const [9]);
+      await File('${root.path}/spool/$attachmentId.jpg')
+          .writeAsBytes(const [9]);
       await SyncEngine(
         remote: _Remote(),
         local: DriftSyncStateStore(db, clock: clock),
@@ -1046,9 +1040,8 @@ void main() {
       );
       expect(files.rolledBack, isEmpty);
       expect(
-        File(
-          '${root.path}/.sync_staging/$secondAttachmentId.pending',
-        ).existsSync(),
+        File('${root.path}/.sync_staging/$secondAttachmentId.pending')
+            .existsSync(),
         isTrue,
       );
     },
