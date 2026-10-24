@@ -3,7 +3,22 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
+  repository:
+    name: Repository source and backend checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python3 -m unittest discover -s tools -p 'test_*.py' -v
+      - run: python3 tools/phase9_security_checks.py
+      - run: python3 tools/phase10_qa_checks.py
+      - run: python3 tools/phase11_android_rc_checks.py
+      - run: python3 tools/secret_scan.py
+      - run: node --test supabase/functions/_shared/billing/tests/*.test.mjs supabase/functions/_shared/account_deletion/tests/*.test.mjs
   flutter:
+    needs: repository
     runs-on: ubuntu-latest
     env:
       CI: 'true'
@@ -28,3 +43,30 @@ jobs:
       - run: flutter test
       - name: Android debug verification only
         run: flutter build apk --debug --flavor development -t lib/main_development.dart
+  ios-unsigned:
+    name: iOS unsigned compile only
+    needs: repository
+    runs-on: macos-26
+    timeout-minutes: 45
+    env:
+      CI: 'true'
+      FLUTTER_SUPPRESS_ANALYTICS: 'true'
+      DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record Apple build tools
+        run: |
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+          pod --version
+      - name: Install pinned Flutter stable source release
+        run: |
+          git clone --depth 1 --branch 3.47.5 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          test "$(git -C "$RUNNER_TEMP/flutter" rev-parse HEAD)" = "6a19cca56475dbfba1478ee68d7bd0c2ef891da1"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - run: flutter --version
+      - run: flutter pub get --enforce-lockfile
+      - run: flutter gen-l10n
+      - run: dart run build_runner build
+      - name: Compile production flavor without code signing
+        run: flutter build ios --release --no-codesign --flavor production -t lib/main_production.dart --dart-define-from-file=release.production.example.json

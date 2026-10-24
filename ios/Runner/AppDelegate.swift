@@ -36,7 +36,9 @@ final class SyncConnectivityStreamHandler: NSObject, FlutterStreamHandler {
 
   func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
     GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
-    let registrar = engineBridge.pluginRegistry.registrar(forPlugin: "KeEvSyncConnectivity")
+    guard let registrar = engineBridge.pluginRegistry.registrar(forPlugin: "KeEvSyncConnectivity") else {
+      return
+    }
     let handler = SyncConnectivityStreamHandler()
     FlutterEventChannel(
       name: "com.keev.ledger/sync_connectivity",
@@ -44,7 +46,9 @@ final class SyncConnectivityStreamHandler: NSObject, FlutterStreamHandler {
     ).setStreamHandler(handler)
     connectivityHandler = handler
 
-    let trackingRegistrar = engineBridge.pluginRegistry.registrar(forPlugin: "KeEvTrackingAuthorization")
+    guard let trackingRegistrar = engineBridge.pluginRegistry.registrar(forPlugin: "KeEvTrackingAuthorization") else {
+      return
+    }
     FlutterMethodChannel(
       name: "com.keev.ledger/tracking",
       binaryMessenger: trackingRegistrar.messenger()
