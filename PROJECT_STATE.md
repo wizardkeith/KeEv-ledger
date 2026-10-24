@@ -1,6 +1,6 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T16:32:12+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-24T16:47:07+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
@@ -8,14 +8,14 @@ Last updated: **2026-10-24T16:32:12+08:00** (Asia/Hong_Kong).
 - Shared status: this file on `main`. Read its current remote version before answering progress questions.
 - Source baseline: `KeEv_Ledger_Phase_11_Native_Build_Fix_Gate_Complete.tar.xz`, delivered 25 September 2026 HKT.
 - Current phase: **Phase 11 Native Build Fix Gate Complete**. No Phase 12 implementation was performed by this import.
-- Current work: authorized formatting-only recovery is in progress on `codex/ledger-format-gate-20261024`, draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1). Application changes are unmerged; this main-branch record is documentation only.
+- Current work: formatting correction and necessary whitespace-tolerant source-contract test fix are complete on `codex/ledger-format-gate-20261024` at `1e76c92e0ea0afe6757c5c3225270d44b1fce30f`, draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1). Fresh branch push and PR quality gates passed, including Android debug. Application changes remain **unmerged**; main contains documentation only from this task.
 
 ## Completed GitHub synchronization
 
 - Full source import: [f7cb8d5f385393c7fdccc61f0dad80554572ba9f](https://github.com/wizardkeith/KeEv-ledger/commit/f7cb8d5f385393c7fdccc61f0dad80554572ba9f).
 - Verified all **523 files** against the prepared source: every Git blob hash, byte size and file mode matched, and `main` was confirmed at the import commit. This status follow-up changes documentation only.
 - The oversized original Noto Sans SC font was transferred compressed, restored with SHA-256 and Git blob checks, and committed unchanged. The temporary import workflow and compressed transfer file are absent from the completed source tree.
-- The retained quality-gate workflow ran automatically for the source import: [GitHub Actions run 39988480789](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39988480789). It **failed at the Dart formatting check**. Pinned Flutter installation, locked dependency installation, localization generation and build_runner succeeded. The formatter checked 176 files and reported 21 that need formatting, exiting with code 1. `flutter analyze`, `flutter test` and the Android debug build were consequently skipped. No fresh passing test or native-build result is claimed. Application source was preserved during this import; the formatting correction remains pending.
+- The retained quality-gate workflow ran automatically for the source import: [GitHub Actions run 39988480789](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39988480789). It **failed at the Dart formatting check**. Pinned Flutter installation, locked dependency installation, localization generation and build_runner succeeded. The formatter checked 176 files and reported 21 that need formatting, exiting with code 1. `flutter analyze`, `flutter test` and the Android debug build were consequently skipped. No fresh passing test or native-build result was claimed during the import. Application source was preserved during this import; the correction is now verified on unmerged draft PR #1, as recorded in the latest checkpoint below.
 - This is a verified one-time source import. Future local changes still need to be committed and pushed; ongoing synchronization is not configured.
 
 ## Verified during this import
@@ -34,10 +34,10 @@ Unsigned AAB SHA-256: `0FC19E6CBE976D3A7B42EBF1DD0AF1B3AB12ADA5708BD0EA63EC42D0E
 
 ## Next steps
 
-1. Connect this repository to the intended Codex Cloud environment and prepare the pinned Flutter/Android tools.
-2. Address the recorded formatting failure with the pinned Dart formatter, review the resulting diff, and commit that correction separately from the source import. Keep the quality gate enabled. Rerun it and record actual analyze/test/build results; the later steps have not yet run in this GitHub check.
-3. Record the environment setup/verification, task link, branch and commit here. Have Evana read this canonical record and hand it to future delegated work. A GitHub import does not itself connect Evana or create a Cloud environment.
-4. Continue only the owner's requested development scope. Signing, store setup, device acceptance and iOS build acceptance remain listed in [release blockers](docs/RELEASE_BLOCKERS.md).
+1. Parent coordinates review of draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1) at `1e76c92e0ea0afe6757c5c3225270d44b1fce30f`. Do not merge without parent coordination.
+2. After an authorized merge, follow the retained main quality gate and record its actual outcome here. Main's original formatting remains unfixed until that merge; branch CI success is distinct from main CI.
+3. Future tasks read this canonical main status and fetch live refs. This cloud task used hosted CI for pinned Flutter/Dart verification; it did not establish a ready local/native desktop toolchain or continuous synchronization.
+4. Continue only the owner's requested scope. Phase 12, release signing, store submission and production enablement remain outside this task. Owner/device/iOS/live-backend limitations remain in [release blockers](docs/RELEASE_BLOCKERS.md).
 
 ## Handoff rule
 
@@ -72,7 +72,7 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - This closing update changes only `PROJECT_STATE.md`. Documentation diff/whitespace checks and normal remote push/readback are performed; no application code, assets, builds/tests, Site/Wix publication, settings or local Unity work are changed. Prior product, acceptance and release limitations remain in force.
 - Next: parent reads back this closing documentation SHA and current update time; future application work follows the owner's explicit task and must preserve unsynchronized local work.
 
-## Formatting gate recovery in progress — 2026-10-24T16:32:12+08:00
+## Historical formatting recovery checkpoint (superseded below) — 2026-10-24T16:32:12+08:00
 
 - Live main was fetched and verified at `26b1091d427da843c52d3a1b0689cf518b72d3f0`; clean isolated cloud checkout at `/workspace/KeEv-ledger`. KeEv-games and the owner's offline/local computer were not modified.
 - Work branch: [codex/ledger-format-gate-20261024](https://github.com/wizardkeith/KeEv-ledger/tree/codex/ledger-format-gate-20261024); draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1). Bootstrap commit `e194fc6f4c27d9ed05e55eb07a036e897a1e1384` adds only a temporary formatter recovery workflow, to be removed from the final diff.
@@ -80,3 +80,27 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - [Recovery run 40078328539](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078328539) is in progress: pinned SDK, locked dependencies and localization passed; code generation is running. Formatting/token preservation, analyze, tests and Android are not yet verified for the correction.
 - Confirmed [prior run 39995907847](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39995907847) failed formatting (21 of 176 files); analyze/test/Android skipped. Historical 322-test/unsigned RC results remain historical.
 - Next: retrieve official formatter patch, review semantic preservation, remove recovery workflow, commit/push formatting only, follow the retained quality gate to terminal, then update this canonical record with final SHA and actual outcomes. No merge, Phase 12, product behavior, signing, stores, credentials or security changes.
+
+## Formatting correction verified; draft PR awaits coordination — 2026-10-24T16:47:07+08:00
+
+- Baseline fetched live before edits: `26b1091d427da843c52d3a1b0689cf518b72d3f0`. Final saved branch: [codex/ledger-format-gate-20261024](https://github.com/wizardkeith/KeEv-ledger/tree/1e76c92e0ea0afe6757c5c3225270d44b1fce30f); pinned head **`1e76c92e0ea0afe6757c5c3225270d44b1fce30f`**; draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1), unmerged.
+- [Formatting commit `33fc851`](https://github.com/wizardkeith/KeEv-ledger/commit/33fc851f1877cd26a3acdbadbfe758a3a730859f) applies only official Dart 3.13.4 formatter output to 21 files. [Recovery run 40078328539](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078328539) passed: 176 files checked, 21 formatted, then 176 files / zero changes on the second pass. Analyzer token comparison passed for all 21 files, excluding whitespace/comments and optional trailing commas; manual diff review and `git diff --check` also passed. Product behavior, entitlement/ads decisions and migration definitions are unchanged.
+- [First corrected-source gate 40078550113](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078550113) **failed tests**: format passed (176 / zero changes), analyze passed, **288 tests passed / 1 failed**, Android **skipped**. The only failure was an existing source-contract assertion that required the Supabase invocation and first argument on the same line.
+- [Test-only follow-up `1e76c92`](https://github.com/wizardkeith/KeEv-ledger/commit/1e76c92e0ea0afe6757c5c3225270d44b1fce30f) changes the two affected assertions to accept formatter whitespace while preserving the exact invocation and endpoint names. Review confirmed original and formatted calls match and wrong endpoints are rejected. No tests were skipped or disabled.
+- The temporary read-only formatter recovery workflow is removed from the final PR diff; the permanent quality-gate workflow and its permissions are unchanged. Final diff: 21 formatted Dart files plus this necessary test-only correction (22 files total).
+
+| Fresh quality gate at pinned head | Outcome |
+| --- | --- |
+| [PR run 40078823740](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078823740) | **SUCCESS, terminal** |
+| [Branch push run 40078820980](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078820980) | **SUCCESS, terminal** |
+| Pinned SDK / locked dependencies / localization / build_runner | **PASS** |
+| Dart format | **PASS — 176 files, zero changes** |
+| Flutter analyze | **PASS — no issues found** |
+| Flutter test | **PASS — 289 tests reported by this fresh CLI run** |
+| Android development debug | **PASS — `assembleDevelopmentDebug`; built `app-development-debug.apk`** |
+
+- Verified official Flutter **3.47.5**, framework `6a19cca56475dbfba1478ee68d7bd0c2ef891da1`, Dart **3.13.4** in the terminal PR job logs. The debug APK was built in the hosted runner; the retained workflow does not upload it as a durable artifact. No production AAB, release lint, release signing, store or real-device acceptance was rerun. Historical 322-test events and unsigned AAB remain separately labelled history; the fresh CLI count above is not inferred from those records.
+- Cloud limitation: local Dart SDK bootstrap returned proxy CONNECT **403**. Official pinned execution succeeded in existing GitHub Actions, without bypassing the restriction. Shell GH_TOKEN was invalid; the already-connected GitHub app performed authorized remote saves. No credential/security changes were made, and no local-computer handoff was needed.
+- Canonical main was reread before this documentation-only update; its existing contents were preserved. [Main documentation run 40078429967](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078429967) **failed the original format gate**, with analyze/test/Android **skipped**, because application changes remain on the draft branch. This documentation successor also leaves main application source unchanged; no new main CI pass is claimed.
+- Repository checkout is clean and final source is saved remotely. Only Ledger was modified; KeEv-games and the owner's computer were untouched. No Phase 12, product logic, enabled purchases/ads, signing configuration, credentials, store release or migration change was made.
+- Remaining action: parent reviews/co-ordinates any merge, then verifies main CI. Release limitations remain owner signing/Play lineage, legal URLs/Data Safety/store setup, live backend/store acceptance, iOS/Xcode and real-device/accessibility/Android 16/16 KB acceptance from [RELEASE_BLOCKERS.md](docs/RELEASE_BLOCKERS.md).
