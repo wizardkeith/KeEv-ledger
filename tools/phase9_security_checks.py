@@ -63,7 +63,10 @@ assert 'request.json()' not in deletion and "admin.auth.admin.deleteUser(userId)
 assert "accountId:data.user.id" in deletion
 assert 'widget.controller.deleteAccount()' in read('lib/features/account/presentation/account_screen.dart')
 assert 'widget.syncController?.unlink()' in read('lib/features/account/presentation/account_screen.dart')
-assert 'String.fromEnvironment(\'ACCOUNT_DELETION_URL\')' in read('lib/features/onboarding/presentation/onboarding_screen.dart')
+assert re.search(
+    r"\bString\.fromEnvironment\(\s*'ACCOUNT_DELETION_URL'\s*,?\s*\)",
+    read('lib/features/onboarding/presentation/onboarding_screen.dart'),
+), 'missing account-deletion URL environment define'
 assert 'ledger_backups' not in read('lib/features/backup/infrastructure/backup_archive_codec.dart')
 for path in (root/'lib').rglob('*.dart'):
     source=path.read_text()

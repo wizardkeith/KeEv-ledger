@@ -7,6 +7,7 @@ const config=readFileSync(new URL('../../../../config.toml',import.meta.url),'ut
 const client=readFileSync(new URL('../../../../../lib/app/bootstrap.dart',import.meta.url),'utf8');
 const apple=readFileSync(new URL('../apple.ts',import.meta.url),'utf8');
 const google=readFileSync(new URL('../google.ts',import.meta.url),'utf8');
+const configuredCatalogueGuard=/supabase\s*!=\s*null\s*&&\s*configuredIds\.trim\(\)\.isNotEmpty/;
 test('billing metadata is server-private; RLS only allows own sanitized state',()=>{
  assert.match(sql,/revoke all on schema billing_private from public, anon, authenticated/);
  assert.match(sql,/alter table public\.billing_entitlements enable row level security/);
@@ -25,7 +26,7 @@ test('commit, refresh and acknowledgement RPCs are service-role only',()=>{
 });
 test('checkout defaults disabled behind explicit opt-in; no client service role credential',()=>{
  assert.match(client,/bool\.fromEnvironment\(\s*'PURCHASES_ENABLED', defaultValue: false/);
- assert.match(client,/supabase != null && configuredIds\.trim\(\)\.isNotEmpty/);
+ assert.match(client,configuredCatalogueGuard);
  const dart=readFileSync(new URL('../../../../../lib/features/purchases/infrastructure/supabase_purchase_remote.dart',import.meta.url),'utf8');
  assert.doesNotMatch(dart,/service_role|SERVICE_ROLE|private_key/);
  const purchases=readFileSync(new URL('../../../../../lib/features/purchases/application/purchase_controller.dart',import.meta.url),'utf8');
@@ -36,6 +37,21 @@ test('checkout defaults disabled behind explicit opt-in; no client service role 
  assert.match(purchases,/Duration\(minutes: 5\)/);
  const app=readFileSync(new URL('../../../../../lib/app/app.dart',import.meta.url),'utf8');
  assert.match(app,/widget\.purchaseController\?\.resumed\(\)/);
+});
+test('catalogue source guard accepts formatter line breaks',()=>{
+ for(const source of [
+  'supabase != null && configuredIds.trim().isNotEmpty',
+  'supabase != null &&\n        configuredIds.trim().isNotEmpty',
+ ]) assert.match(source,configuredCatalogueGuard);
+});
+test('catalogue source guard rejects removed or altered prerequisites',()=>{
+ for(const source of [
+  'configuredIds.trim().isNotEmpty',
+  'supabase != null',
+  'supabase != null || configuredIds.trim().isNotEmpty',
+  'supabase == null && configuredIds.trim().isNotEmpty',
+  'supabase != null && configuredIds.trim().isEmpty',
+ ]) assert.doesNotMatch(source,configuredCatalogueGuard);
 });
 test('provider events stay private, unique and recoverable; source observations block stale writes',()=>{
  assert.match(notificationsSql,/create table billing_private\.provider_events/);
