@@ -483,8 +483,7 @@ void main() {
               storageKey: 'receipts/example.jpg',
               mimeType: 'image/jpeg',
               byteSize: 128,
-              sha256Hex:
-                  '0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef',
+              sha256Hex: '0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef',
               position: 0,
               createdAtUtc: 100,
             ),
@@ -543,10 +542,12 @@ void main() {
         );
       },
       validateItems: (newDb) async {
-        final row = await newDb.customSelect(
-          'SELECT mutation_id, base_server_version, attempt_count, state '
-          'FROM sync_outbox',
-        ).getSingle();
+        final row = await newDb
+            .customSelect(
+              'SELECT mutation_id, base_server_version, attempt_count, state '
+              'FROM sync_outbox',
+            )
+            .getSingle();
         expect(row.read<String>('mutation_id'), mutation);
         expect(row.read<int>('base_server_version'), 3);
         expect(row.read<int>('attempt_count'), 0);
@@ -558,7 +559,9 @@ void main() {
           isEmpty,
         );
         expect(
-          await newDb.customSelect('SELECT * FROM sync_attachment_cleanup').get(),
+          await newDb
+              .customSelect('SELECT * FROM sync_attachment_cleanup')
+              .get(),
           isEmpty,
         );
       },

@@ -79,12 +79,10 @@ final class SecureEntitlementCache implements EntitlementCache {
     final raw = await _storage.read(key: _key(accountId));
     if (raw == null) return null;
     final json = jsonDecode(raw) as Map<String, dynamic>;
-    final verifiedAt = DateTime.tryParse(
-      json['verifiedAt'] as String? ?? '',
-    )?.toUtc();
-    final expiresAt = DateTime.tryParse(
-      json['expiresAt'] as String? ?? '',
-    )?.toUtc();
+    final verifiedAt = DateTime.tryParse(json['verifiedAt'] as String? ?? '')
+        ?.toUtc();
+    final expiresAt = DateTime.tryParse(json['expiresAt'] as String? ?? '')
+        ?.toUtc();
     final now = DateTime.now().toUtc();
     // Never resurrect a cache with no server timestamp or expiry. 48h is a
     // temporary UI allowance, not a store or server subscription ruling.

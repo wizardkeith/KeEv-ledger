@@ -150,14 +150,17 @@ void main() {
     final runtime = BookkeepingRuntime(database);
     addTearDown(runtime.close);
     final profile = (await runtime.profile() as Success<LocalId>).value;
-    expect(await runtime.service.createAccount(
-      profileId: profile,
-      name: 'Cash',
-      kind: AccountKind.cash,
-      currency: Currency.hkd,
-      openingBalance: Money.zero(Currency.hkd),
-      openingDate: BusinessDate('2026-09-21'),
-    ), isA<Success<Account>>());
+    expect(
+      await runtime.service.createAccount(
+        profileId: profile,
+        name: 'Cash',
+        kind: AccountKind.cash,
+        currency: Currency.hkd,
+        openingBalance: Money.zero(Currency.hkd),
+        openingDate: BusinessDate('2026-09-21'),
+      ),
+      isA<Success<Account>>(),
+    );
     final store = _MemorySessionStore();
     final gateway = _FakeGateway()
       ..signInResult = Success(_bundle())
@@ -172,8 +175,12 @@ void main() {
     expect(await controller.deleteAccount(), isA<Success<void>>());
     expect(controller.state, AccountSessionState.localOnly);
     expect(store.value, isNull);
-    expect((await runtime.service.accounts.list(profile) as Success<List<Account>>).value,
-        hasLength(1));
+    expect(
+      (await runtime.service.accounts.list(
+        profile,
+      ) as Success<List<Account>>).value,
+      hasLength(1),
+    );
   });
 }
 

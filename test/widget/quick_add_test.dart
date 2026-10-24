@@ -418,9 +418,7 @@ void main() {
         MaterialApp(
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
-          home: Scaffold(
-            body: HistoryView(session: runtime),
-          ),
+          home: Scaffold(body: HistoryView(session: runtime)),
         ),
       );
       await tester.runAsync(() async {
@@ -452,11 +450,13 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
-    await tester.pumpWidget(MaterialApp(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: Scaffold(body: HistoryView(session: runtime)),
-    ));
+    await tester.pumpWidget(
+      MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: Scaffold(body: HistoryView(session: runtime)),
+      ),
+    );
     await tester.runAsync(() async {
       await Future<void>.delayed(const Duration(milliseconds: 60));
     });

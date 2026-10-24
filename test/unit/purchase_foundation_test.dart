@@ -165,7 +165,10 @@ void main() {
       await controller.handle(purchase);
       expect(controller.adFree, false);
       expect(journal.pending, contains(purchase.key));
-      expect(store.completions, 0); // Server unavailable: keep transaction unfinished.
+      expect(
+        store.completions,
+        0,
+      ); // Server unavailable: keep transaction unfinished.
     },
   );
 
@@ -316,35 +319,47 @@ void main() {
     expect(product.description, isNot(product.period.toString()));
   });
 
-  test('backend refresh grants adFree, account switch does not inherit', () async {
-    final remote = FakeEntitlementRemote();
-    remote.values['account-a'] = VerifiedEntitlement(
-      accountId: 'account-a', status: EntitlementStatus.active, adFree: true,
-      verifiedAtUtc: DateTime.now().toUtc(),
-      expiresAtUtc: DateTime.now().toUtc().add(const Duration(days: 1)),
-    );
-    final refreshed = PurchaseController(
-      store: store, verifier: verifier, journal: journal,
-      catalogue: const PurchaseCatalogue({'test.owner.supplied'}),
-      accountId: () => account, entitlementRemote: remote,
-    );
-    await refreshed.refreshEntitlements();
-    expect(refreshed.adFree, true);
-    account = 'account-b';
-    refreshed.accountChanged();
-    expect(refreshed.adFree, false);
-    await refreshed.refreshEntitlements();
-    expect(refreshed.adFree, false);
-    refreshed.dispose();
-  });
+  test(
+    'backend refresh grants adFree, account switch does not inherit',
+    () async {
+      final remote = FakeEntitlementRemote();
+      remote.values['account-a'] = VerifiedEntitlement(
+        accountId: 'account-a',
+        status: EntitlementStatus.active,
+        adFree: true,
+        verifiedAtUtc: DateTime.now().toUtc(),
+        expiresAtUtc: DateTime.now().toUtc().add(const Duration(days: 1)),
+      );
+      final refreshed = PurchaseController(
+        store: store,
+        verifier: verifier,
+        journal: journal,
+        catalogue: const PurchaseCatalogue({'test.owner.supplied'}),
+        accountId: () => account,
+        entitlementRemote: remote,
+      );
+      await refreshed.refreshEntitlements();
+      expect(refreshed.adFree, true);
+      account = 'account-b';
+      refreshed.accountChanged();
+      expect(refreshed.adFree, false);
+      await refreshed.refreshEntitlements();
+      expect(refreshed.adFree, false);
+      refreshed.dispose();
+    },
+  );
 
   test('Google backend acknowledgement pending retains journal and avoids client completion', () async {
     verifier.outcome = VerificationOutcome.verified;
     verifier.acknowledgementPending = true;
     const google = StoreTransaction(
-      platform: StoreKind.google,id:'google-1',productId:'test.owner.supplied',
-      status:StoreEventStatus.purchased,verificationData:'opaque-proof',
-      pendingCompletion:true,accountId:'account-a',
+      platform: StoreKind.google,
+      id: 'google-1',
+      productId: 'test.owner.supplied',
+      status: StoreEventStatus.purchased,
+      verificationData: 'opaque-proof',
+      pendingCompletion: true,
+      accountId: 'account-a',
     );
     await controller.handle(google);
     expect(controller.adFree, true);
@@ -373,33 +388,30 @@ void main() {
     recovered.dispose();
   });
 
-  test(
-    'offline verified cache is account scoped, unverified purchase cannot fill it',
-    () async {
-      final cache = MemoryEntitlements();
-      final now = DateTime.now().toUtc();
-      cache.values['account-a'] = VerifiedEntitlement(
-        accountId: 'account-a',
-        status: EntitlementStatus.active,
-        adFree: true,
-        verifiedAtUtc: now,
-        expiresAtUtc: now.add(const Duration(days: 1)),
-      );
-      final cached = PurchaseController(
-        store: store,
-        verifier: const UnavailablePurchaseVerifier(),
-        journal: journal,
-        catalogue: const PurchaseCatalogue({'test.owner.supplied'}),
-        accountId: () => account,
-        cache: cache,
-      );
-      await cached.start();
-      expect(cached.adFree, true);
-      account = 'account-b';
-      cached.accountChanged();
-      await Future<void>.delayed(Duration.zero);
-      expect(cached.adFree, false);
-      cached.dispose();
-    },
-  );
+  test('offline verified cache is account scoped, unverified purchase cannot fill it', () async {
+    final cache = MemoryEntitlements();
+    final now = DateTime.now().toUtc();
+    cache.values['account-a'] = VerifiedEntitlement(
+      accountId: 'account-a',
+      status: EntitlementStatus.active,
+      adFree: true,
+      verifiedAtUtc: now,
+      expiresAtUtc: now.add(const Duration(days: 1)),
+    );
+    final cached = PurchaseController(
+      store: store,
+      verifier: const UnavailablePurchaseVerifier(),
+      journal: journal,
+      catalogue: const PurchaseCatalogue({'test.owner.supplied'}),
+      accountId: () => account,
+      cache: cache,
+    );
+    await cached.start();
+    expect(cached.adFree, true);
+    account = 'account-b';
+    cached.accountChanged();
+    await Future<void>.delayed(Duration.zero);
+    expect(cached.adFree, false);
+    cached.dispose();
+  });
 }

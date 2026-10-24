@@ -167,13 +167,13 @@ final class DriftLedgerBackupStore implements LedgerBackupStore {
     final categories = rows('categories').map(Category.fromJson).toList();
     final projects = rows('projects').map(Project.fromJson).toList();
     final budgets = rows('budgets').map(Budget.fromJson).toList();
-    final transactions = rows(
-      'transactions',
-    ).map(BookkeepingTransaction.fromJson).toList();
+    final transactions = rows('transactions')
+        .map(BookkeepingTransaction.fromJson)
+        .toList();
     final transfers = rows('transfers').map(Transfer.fromJson).toList();
-    final receipts = rows(
-      'receiptAttachments',
-    ).map(ReceiptAttachment.fromJson).toList();
+    final receipts = rows('receiptAttachments')
+        .map(ReceiptAttachment.fromJson)
+        .toList();
     if (profiles.length != 1) throw const FormatException();
     _unique(accounts.map((e) => e.id));
     _unique(categories.map((e) => e.id));

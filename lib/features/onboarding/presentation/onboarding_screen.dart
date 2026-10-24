@@ -55,35 +55,55 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               onPressed: () => setState(() => privacy = true),
             ),
           ] else ...[
-            KeEvCard(child: Text(const bool.fromEnvironment('dart.vm.product')
-                ? l.localOnlyDataNotice : l.developmentLegal)),
+            KeEvCard(
+              child: Text(
+                const bool.fromEnvironment('dart.vm.product')
+                    ? l.localOnlyDataNotice
+                    : l.developmentLegal,
+              ),
+            ),
             const SizedBox(height: 16),
-            if (configuredLegalUrl('PRIVACY_POLICY_URL') != null || !const bool.fromEnvironment('dart.vm.product')) KeEvSecondaryButton(
-              key: const Key('privacy-link'),
-              label: l.privacyPolicy,
-              onPressed: () => showLegal(context, l.privacyPolicy, url: configuredLegalUrl('PRIVACY_POLICY_URL')),
-            ),
+            if (configuredLegalUrl('PRIVACY_POLICY_URL') != null ||
+                !const bool.fromEnvironment('dart.vm.product'))
+              KeEvSecondaryButton(
+                key: const Key('privacy-link'),
+                label: l.privacyPolicy,
+                onPressed: () => showLegal(
+                  context,
+                  l.privacyPolicy,
+                  url: configuredLegalUrl('PRIVACY_POLICY_URL'),
+                ),
+              ),
             const SizedBox(height: 12),
-            if (configuredLegalUrl('TERMS_URL') != null || !const bool.fromEnvironment('dart.vm.product')) KeEvSecondaryButton(
-              key: const Key('terms-link'),
-              label: l.terms,
-              onPressed: () => showLegal(context, l.terms, url: configuredLegalUrl('TERMS_URL')),
-            ),
-            if (!const bool.fromEnvironment('dart.vm.product')) CheckboxListTile(
-              key: const Key('accept-preview'),
-              value: accepted,
-              onChanged: (value) => setState(() => accepted = value ?? false),
-              title: Text(l.acceptPreview),
-              controlAffinity: ListTileControlAffinity.leading,
-              contentPadding: EdgeInsets.zero,
-            ),
+            if (configuredLegalUrl('TERMS_URL') != null ||
+                !const bool.fromEnvironment('dart.vm.product'))
+              KeEvSecondaryButton(
+                key: const Key('terms-link'),
+                label: l.terms,
+                onPressed: () => showLegal(
+                  context,
+                  l.terms,
+                  url: configuredLegalUrl('TERMS_URL'),
+                ),
+              ),
+            if (!const bool.fromEnvironment('dart.vm.product'))
+              CheckboxListTile(
+                key: const Key('accept-preview'),
+                value: accepted,
+                onChanged: (value) => setState(() => accepted = value ?? false),
+                title: Text(l.acceptPreview),
+                controlAffinity: ListTileControlAffinity.leading,
+                contentPadding: EdgeInsets.zero,
+              ),
             Text(l.sessionNotice),
             const SizedBox(height: 16),
             KeEvPrimaryButton(
               key: const Key('start-local'),
               label: l.startLocal,
-              onPressed: const bool.fromEnvironment('dart.vm.product') || accepted
-                  ? widget.onStart : null,
+              onPressed:
+                  const bool.fromEnvironment('dart.vm.product') || accepted
+                  ? widget.onStart
+                  : null,
             ),
             const SizedBox(height: 12),
             KeEvSecondaryButton(
@@ -100,10 +120,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 }
 
 Uri? configuredLegalUrl(String name) {
-  final raw = switch(name) {
+  final raw = switch (name) {
     'PRIVACY_POLICY_URL' => const String.fromEnvironment('PRIVACY_POLICY_URL'),
     'TERMS_URL' => const String.fromEnvironment('TERMS_URL'),
-    'ACCOUNT_DELETION_URL' => const String.fromEnvironment('ACCOUNT_DELETION_URL'),
+    'ACCOUNT_DELETION_URL' => const String.fromEnvironment(
+      'ACCOUNT_DELETION_URL',
+    ),
     _ => '',
   };
   final uri = Uri.tryParse(raw);
@@ -111,24 +133,25 @@ Uri? configuredLegalUrl(String name) {
 }
 
 Future<void> showLegal(BuildContext context, String title, {Uri? url}) {
-  if (url != null) return launchUrl(url, mode: LaunchMode.externalApplication).then((_) {});
+  if (url != null)
+    return launchUrl(url, mode: LaunchMode.externalApplication).then((_) {});
   if (const bool.fromEnvironment('dart.vm.product')) return Future.value();
   return showDialog<void>(
-  context: context,
-  animationStyle: AnimationStyle.noAnimation,
-  builder: (context) {
-    final l = AppLocalizations.of(context);
-    return AlertDialog(
-      title: Text(title),
-      scrollable: true,
-      content: Text(l.developmentLegal),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text(l.close),
-        ),
-      ],
-    );
-  },
+    context: context,
+    animationStyle: AnimationStyle.noAnimation,
+    builder: (context) {
+      final l = AppLocalizations.of(context);
+      return AlertDialog(
+        title: Text(title),
+        scrollable: true,
+        content: Text(l.developmentLegal),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(l.close),
+          ),
+        ],
+      );
+    },
   );
 }
