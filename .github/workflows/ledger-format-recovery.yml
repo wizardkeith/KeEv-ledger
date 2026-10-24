@@ -1,0 +1,72 @@
+name: Ledger pinned formatter recovery
+on:
+  push:
+    branches: [codex/ledger-format-gate-20261024]
+  pull_request:
+    branches: [main]
+    paths: [.github/workflows/ledger-format-recovery.yml]
+permissions:
+  contents: read
+jobs:
+  format-recovery:
+    runs-on: ubuntu-latest
+    env:
+      CI: 'true'
+      FLUTTER_SUPPRESS_ANALYTICS: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned official Flutter
+        run: |
+          git clone --depth 1 --branch 3.47.5 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          test "$(git -C "$RUNNER_TEMP/flutter" rev-parse HEAD)" = "6a19cca56475dbfba1478ee68d7bd0c2ef891da1"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - run: flutter --version
+      - run: flutter pub get --enforce-lockfile
+      - run: flutter gen-l10n
+      - run: dart run build_runner build
+      - name: Apply pinned formatter and verify idempotence
+        run: |
+          dart format lib test tools/capture_shell_test.dart tools/capture_typography_test.dart
+          dart format --output=none --set-exit-if-changed lib test tools/capture_shell_test.dart tools/capture_typography_test.dart
+          git diff --check
+      - name: Verify preserved Dart tokens and export formatting patch
+        run: |
+          cat > "$RUNNER_TEMP/verify_format.dart" <<'DART'
+          import 'dart:io';
+          import 'dart:convert';
+          import 'package:analyzer/dart/analysis/utilities.dart';
+
+          List<String> tokens(String source) {
+            final result = parseString(content: source, throwIfDiagnostics: true);
+            final output = <String>[];
+            var token = result.unit.beginToken;
+            while (!token.isEof) {
+              final lexeme = token.lexeme;
+              final next = token.next!;
+              if (!(lexeme == ',' && [')', ']', '}'].contains(next.lexeme))) {
+                output.add(lexeme);
+              }
+              token = next;
+            }
+            return output;
+          }
+
+          void main() {
+            final paths = (Process.runSync('git', ['diff', '--name-only']).stdout as String)
+                .trim().split('\n').where((p) => p.isNotEmpty).toList();
+            for (final path in paths) {
+              if (!path.endsWith('.dart')) throw StateError('Unexpected change: $path');
+              final before = Process.runSync('git', ['show', 'HEAD:$path']);
+              if (before.exitCode != 0) throw StateError('Cannot read baseline: $path');
+              final original = jsonEncode(tokens(before.stdout as String));
+              final formatted = jsonEncode(tokens(File(path).readAsStringSync()));
+              if (original != formatted) throw StateError('Non-format token change: $path');
+              print('TOKENS_PRESERVED $path');
+            }
+            print('TOKENS_PRESERVED_COUNT=${paths.length}');
+          }
+          DART
+          dart --packages=.dart_tool/package_config.json "$RUNNER_TEMP/verify_format.dart"
+          git diff --stat
+          git diff --binary -- lib test tools/capture_shell_test.dart tools/capture_typography_test.dart | gzip -n | base64 -w0 | sed 's/^/FORMAT_PATCH_B64=/'
+          echo
