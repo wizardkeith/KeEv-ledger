@@ -1,6 +1,6 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T19:11:01+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-24T19:29:27+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
@@ -8,7 +8,7 @@ Last updated: **2026-10-24T19:11:01+08:00** (Asia/Hong_Kong).
 - Shared status: this file on `main`. Read its current remote version before answering progress questions.
 - Source baseline: `KeEv_Ledger_Phase_11_Native_Build_Fix_Gate_Complete.tar.xz`, delivered 25 September 2026 HKT.
 - Current phase: **Phase 11 Native Build Fix Gate Complete**. No Phase 12 implementation was performed by this import.
-- Current work: the self-check publication blocker is resolved after precise owner approval. The reviewed five-file candidate is saved at `1ea190c66058fd21121938c433d3612b9453eab8` on `codex/ledger-self-check-ios-preflight-20261024`, unmerged draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2). Repository/backend CI passed; fresh Flutter/Android and unsigned iOS CI are running. Main application source remains at the verified PR #1 merge.
+- Current work: self-check corrections and the demonstrated iOS compiler fix are saved at `58053d2db07e937d22d0ea10bed4ff74fb146229` on unmerged draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2). Both final candidate CI runs are **terminal SUCCESS**, including 4 Python regressions, 63 backend tests, 289 Flutter tests, Android debug and production-flavor **unsigned iOS compilation**. Main application source still contains PR #1 only; signed/device/live-service release acceptance is not complete.
 
 ## Completed GitHub synchronization
 
@@ -34,9 +34,10 @@ Unsigned AAB SHA-256: `0FC19E6CBE976D3A7B42EBF1DD0AF1B3AB12ADA5708BD0EA63EC42D0E
 
 ## Next steps
 
-1. Follow draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2), pinned publication candidate `1ea190c66058fd21121938c433d3612b9453eab8`, through actual repository/backend, Flutter/Android and unsigned iOS CI. Preserve the later verified head/outcomes in the final checkpoint; do not merge the PR.
-2. Publication retry succeeded exactly once after new precise owner approval. The earlier denial below is historical, not an active publication blocker. Native outcomes remain pending until CI actually finishes.
-3. The recorded next engineering gate is the unsigned compile preparation in [RELEASE_RUNBOOK.md](docs/RELEASE_RUNBOOK.md), Phase 12 iOS RC. Signed archive, Apple provisioning/capabilities, device/live-service acceptance, production signing and store publication remain separate owner gates.
+1. Parent reviews unmerged **draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2)** at pinned head `58053d2db07e937d22d0ea10bed4ff74fb146229`. Publishing and verification are complete; **no merge is authorized by this task**.
+2. Candidate verification: [PR CI 40089356864](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089356864) and [push CI 40089352627](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089352627), both terminal success. Earlier unsigned iOS compiler failures are retained below, followed by the tested repair.
+3. The [RELEASE_RUNBOOK.md](docs/RELEASE_RUNBOOK.md) Phase 12 unsigned compile preparation is now verified **on the draft candidate only**. Signed iOS RC, Apple team/bundle/provisioning/capability acceptance, device/native privacy/accessibility and live-service checks remain separate owner gates; no production signing, store publication or account/security changes were performed.
+4. Fetch live main/candidate refs and read this record before future work. Existing [release blockers](docs/RELEASE_BLOCKERS.md) remain; green compile/mock CI does not grant release, device or live-backend acceptance.
 
 ## Handoff rule
 
@@ -136,7 +137,7 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - Local native tooling probe: Linux; no executable Flutter/Dart, Xcode/xcrun, CocoaPods, adb or sdkmanager. Java and Node are available. Native iOS verification requires a permitted macOS execution path; production signing, Apple identity/provisioning, aggregated privacy and device/live-service acceptance remain owner gates. No runtime code, money/FX/local-first behavior, migration, credential/account/security setting, production signing or store change was made.
 - This canonical checkpoint is a separate **documentation-only** main update recording the blocker; it does not publish the rejected five-file candidate. Its automatic main CI, if triggered, checks unchanged main application source, not the local candidate. Next: parent resolves the exact publication scope with further applicable authorization; retry only under the denial rules. Candidate remains unsynchronized until remote save and readback succeed.
 
-## Approved self-check publication — 2026-10-24T19:11:01+08:00
+## Historical approved publication checkpoint (superseded by final verification below) — 2026-10-24T19:11:01+08:00
 
 - Verified local candidate `7d1af042c8b70c54dd881a7f29189e1fcc4051bc` was clean and the work branch did not exist remotely before retry. Live main was `2c5c875c6514adaf68549b4429d4f52a3112c2ce`; its only change since the self-check baseline was the canonical blocker documentation.
 - After precise owner approval for these five files, the previously denied `github_create_tree` was retried **once** and succeeded. Normal remote commit/ref creation published `1ea190c66058fd21121938c433d3612b9453eab8` as a child of that newer main, preserving its documentation. Remote fetch/diff confirmed all five reviewed candidate files exactly match the saved local candidate; only preserved main PROJECT_STATE.md differs from the local checkpoint.
@@ -144,3 +145,29 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - [PR run 40088740471](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40088740471) and [push run 40088719695](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40088719695) are **in progress** at this checkpoint. Both repository/source/backend jobs passed. Flutter/Android and hosted macOS unsigned iOS jobs are still running; no native pass is claimed yet.
 - The candidate retains the existing Flutter 3.47.5/Dart 3.13.4 pin, adds the previously omitted checks, and attempts the runbook's production-flavor **unsigned compile only**. No merge, production signing, distribution archive/upload, account/security/credential setting, store publication, purchases or app runtime behavior change is part of this publication.
 - Next: follow all candidate CI to terminal; record actual pass/fail/skipped/not-run outcomes and any compiler/tooling blocker. The earlier candidate report's publication-denied section remains a historical checkpoint and is superseded by this successful publication receipt.
+
+## Self-check and unsigned iOS candidate verified — 2026-10-24T19:29:27+08:00
+
+- Unmerged **draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2)**; branch [codex/ledger-self-check-ios-preflight-20261024](https://github.com/wizardkeith/KeEv-ledger/tree/codex/ledger-self-check-ios-preflight-20261024); final pinned head **`58053d2db07e937d22d0ea10bed4ff74fb146229`**. The exact five approved files were first published at `1ea190c66058fd21121938c433d3612b9453eab8`, preserving newer main documentation. The prior approval-review blocker was resolved by one retry after precise owner approval; it is not an active blocker.
+- Initial candidate [PR run 40088740471](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40088740471) and [push run 40088719695](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40088719695) both reached terminal **FAILURE overall**: repository/backend and Flutter/Android jobs **passed**, while unsigned iOS **failed** at actual Xcode compilation. Two diagnostics reported unwrapped optional `FlutterPluginRegistrar` messenger use in original `AppDelegate.swift` lines 42 and 49. This was a real native compile defect, not a signing/account or unavailable-tool failure.
+- Follow-up [`58053d2`](https://github.com/wizardkeith/KeEv-ledger/commit/58053d2db07e937d22d0ea10bed4ff74fb146229) adds only `guard let` bindings before the two registrar messenger uses and records the evidence. Channel names and normal handler bodies are unchanged, with early return when a registrar is unavailable. The pinned Flutter header declares the API nullable; the existing Dart tracking gateway handles missing channels as not-supported. No force unwrap, signing/capability/account setting or entitlement/ads decision changed. The full native build is the regression check for these compiler errors.
+- Final PR scope is **six files**: original five self-check/CI files plus the narrowly required `ios/Runner/AppDelegate.swift` repair. Core architecture, integer money/exact FX/local-first behavior, Dart application code, database/migration definitions, dependency pins, native entitlements/project settings, consent decisions and production service configuration are unchanged.
+
+| Final candidate verification at exact head | Actual outcome |
+| --- | --- |
+| [PR run 40089356864](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089356864) | **completed / SUCCESS** |
+| [Push run 40089352627](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089352627) | **completed / SUCCESS** |
+| Python guard regressions | **4 passed** |
+| Backend Node tests | **63 passed, 0 failed, 0 skipped** |
+| Phase 9/10/11 source guards and secret scan | **PASS (static scope)** |
+| Dart format | **176 files, zero changes** |
+| Flutter analyze | **No issues found** |
+| Flutter tests | **289 passed** |
+| Android development debug | **PASS — app-development-debug.apk built** |
+| iOS production-flavor release-mode unsigned compile | **PASS — build/ios/iphoneos/Runner.app built, 72.7 MB reported** |
+
+- Both final candidate runs passed every job and listed step; none failed or were skipped. Fresh terminal logs verify Flutter **3.47.5**, framework pin `6a19cca56475dbfba1478ee68d7bd0c2ef891da1`, Dart **3.13.4**; Apple build tools **Xcode 26.6 (17F113), iOS SDK 26.5, CocoaPods 1.17.0**. Native logs explicitly report code signing disabled. No signed distribution archive, IPA/export, upload or store publication was run. These runner builds are not uploaded as durable artifacts by the workflow.
+- The candidate uses checked-in example defines with purchases, ads and tracking **false**, blank live-service/product/legal settings, and `--no-codesign`. No credentials were created or changed. The approved iOS RC engineering preparation from the runbook is now verified, but **full signed Phase 12/device acceptance is not complete**.
+- Current candidate was fetched back, compared, and is clean in the cloud checkout. The original local-only checkpoint `7d1af04` is retained historically; its five-file contents were verified identical to the first published candidate. There is no uncommitted current-candidate source work. Newer main changes were documentation only and were preserved. KeEv-games, Wix and the owner's offline/local folders were untouched.
+- This canonical update is documentation only. Candidate fixes remain **off main pending an authorized review/merge**; a main documentation-push CI checks main's existing source and is distinct from the fully verified candidate runs above. Latest receipt SHA/readback and any separate documentation-run status are supplied in the closing PR/parent handoff.
+- Remaining requirements: PR review/explicit merge authorization; signed Apple RC/team/bundle/provisioning/capabilities; real-device native/lifecycle/accessibility/Android 16/16 KB acceptance; aggregate privacy/vendor/legal/store disclosures; live authentication/backend/deletion/purchase/ads acceptance; owner release/signing/store actions from [RELEASE_BLOCKERS.md](docs/RELEASE_BLOCKERS.md). No new PR merge, production signing or store action is included in this task.
