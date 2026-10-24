@@ -1,14 +1,14 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T19:29:27+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-25T02:25:18+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
 - Repository: https://github.com/wizardkeith/KeEv-ledger
 - Shared status: this file on `main`. Read its current remote version before answering progress questions.
 - Source baseline: `KeEv_Ledger_Phase_11_Native_Build_Fix_Gate_Complete.tar.xz`, delivered 25 September 2026 HKT.
-- Current phase: **Phase 11 Native Build Fix Gate Complete**. No Phase 12 implementation was performed by this import.
-- Current work: self-check corrections and the demonstrated iOS compiler fix are saved at `58053d2db07e937d22d0ea10bed4ff74fb146229` on unmerged draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2). Both final candidate CI runs are **terminal SUCCESS**, including 4 Python regressions, 63 backend tests, 289 Flutter tests, Android debug and production-flavor **unsigned iOS compilation**. Main application source still contains PR #1 only; signed/device/live-service release acceptance is not complete.
+- Current phase: **Phase 11 Native Build Fix Gate Complete baseline; unsigned iOS compile preflight now verified on main.** Full signed iOS RC / Phase 12 and device/live-service release acceptance remain open.
+- Current work: owner-approved [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2) is **merged** at `db4c46a51fb2077247e2f4a8c497bd18e0ec5353`. Exact merged-main CI **40119808199 completed / SUCCESS**, including source/backend/regression checks, Flutter/Android and production-flavor unsigned iOS compilation. This canonical handoff is a documentation-only successor; no production signing, stores, credentials/account/security changes or new features were performed.
 
 ## Completed GitHub synchronization
 
@@ -34,10 +34,9 @@ Unsigned AAB SHA-256: `0FC19E6CBE976D3A7B42EBF1DD0AF1B3AB12ADA5708BD0EA63EC42D0E
 
 ## Next steps
 
-1. Parent reviews unmerged **draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2)** at pinned head `58053d2db07e937d22d0ea10bed4ff74fb146229`. Publishing and verification are complete; **no merge is authorized by this task**.
-2. Candidate verification: [PR CI 40089356864](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089356864) and [push CI 40089352627](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089352627), both terminal success. Earlier unsigned iOS compiler failures are retained below, followed by the tested repair.
-3. The [RELEASE_RUNBOOK.md](docs/RELEASE_RUNBOOK.md) Phase 12 unsigned compile preparation is now verified **on the draft candidate only**. Signed iOS RC, Apple team/bundle/provisioning/capability acceptance, device/native privacy/accessibility and live-service checks remain separate owner gates; no production signing, store publication or account/security changes were performed.
-4. Fetch live main/candidate refs and read this record before future work. Existing [release blockers](docs/RELEASE_BLOCKERS.md) remain; green compile/mock CI does not grant release, device or live-backend acceptance.
+1. PR #2 Ready + merge and exact-main verification are complete. Use application merge `db4c46a51fb2077247e2f4a8c497bd18e0ec5353` and [main CI 40119808199](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40119808199) as the verified source checkpoint. Fetch live main and read this canonical record before future work.
+2. Continue only the owner's next specifically authorized task. Full signed iOS RC/team/bundle/provisioning/capabilities, device/native privacy/accessibility and live-service/store acceptance remain separate gates in [RELEASE_BLOCKERS.md](docs/RELEASE_BLOCKERS.md). Unsigned compilation does not grant them.
+3. Keep the quality gate enabled. This single documentation-only receipt may trigger its own automatic CI, but application source remains identical to the tested merge. Record its separate status in the closing PR/parent handoff without further documentation-only commits or CI loops.
 
 ## Handoff rule
 
@@ -146,7 +145,7 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - The candidate retains the existing Flutter 3.47.5/Dart 3.13.4 pin, adds the previously omitted checks, and attempts the runbook's production-flavor **unsigned compile only**. No merge, production signing, distribution archive/upload, account/security/credential setting, store publication, purchases or app runtime behavior change is part of this publication.
 - Next: follow all candidate CI to terminal; record actual pass/fail/skipped/not-run outcomes and any compiler/tooling blocker. The earlier candidate report's publication-denied section remains a historical checkpoint and is superseded by this successful publication receipt.
 
-## Self-check and unsigned iOS candidate verified — 2026-10-24T19:29:27+08:00
+## Historical candidate verification (superseded by approved main merge below) — 2026-10-24T19:29:27+08:00
 
 - Unmerged **draft [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2)**; branch [codex/ledger-self-check-ios-preflight-20261024](https://github.com/wizardkeith/KeEv-ledger/tree/codex/ledger-self-check-ios-preflight-20261024); final pinned head **`58053d2db07e937d22d0ea10bed4ff74fb146229`**. The exact five approved files were first published at `1ea190c66058fd21121938c433d3612b9453eab8`, preserving newer main documentation. The prior approval-review blocker was resolved by one retry after precise owner approval; it is not an active blocker.
 - Initial candidate [PR run 40088740471](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40088740471) and [push run 40088719695](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40088719695) both reached terminal **FAILURE overall**: repository/backend and Flutter/Android jobs **passed**, while unsigned iOS **failed** at actual Xcode compilation. Two diagnostics reported unwrapped optional `FlutterPluginRegistrar` messenger use in original `AppDelegate.swift` lines 42 and 49. This was a real native compile defect, not a signing/account or unavailable-tool failure.
@@ -171,3 +170,29 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - Current candidate was fetched back, compared, and is clean in the cloud checkout. The original local-only checkpoint `7d1af04` is retained historically; its five-file contents were verified identical to the first published candidate. There is no uncommitted current-candidate source work. Newer main changes were documentation only and were preserved. KeEv-games, Wix and the owner's offline/local folders were untouched.
 - This canonical update is documentation only. Candidate fixes remain **off main pending an authorized review/merge**; a main documentation-push CI checks main's existing source and is distinct from the fully verified candidate runs above. Latest receipt SHA/readback and any separate documentation-run status are supplied in the closing PR/parent handoff.
 - Remaining requirements: PR review/explicit merge authorization; signed Apple RC/team/bundle/provisioning/capabilities; real-device native/lifecycle/accessibility/Android 16/16 KB acceptance; aggregate privacy/vendor/legal/store disclosures; live authentication/backend/deletion/purchase/ads acceptance; owner release/signing/store actions from [RELEASE_BLOCKERS.md](docs/RELEASE_BLOCKERS.md). No new PR merge, production signing or store action is included in this task.
+
+## PR #2 approved merge and exact-main CI — 2026-10-25T02:25:18+08:00
+
+- [PR #2](https://github.com/wizardkeith/KeEv-ledger/pull/2) was rechecked before mutation: head remained exactly `58053d2db07e937d22d0ea10bed4ff74fb146229`; [PR CI 40089356864](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089356864) and [push CI 40089352627](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40089352627) were terminal successes. Main receipt `b625babd46e691d210ba09cd059eff54a099949d` and its [CI 40090107534](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40090107534) were independently read back as successful.
+- Review submissions, conversation comments, inline comments and review threads were empty; no new code/head changes or unresolved requests were found. Newer main changes since the candidate base affected only PROJECT_STATE.md.
+- After owner approval, the PR was marked Ready and merged through the supported API with the exact expected head SHA and normal merge method. Merge time: **2026-10-25T02:14:40+08:00**. Exact application merge: [`db4c46a51fb2077247e2f4a8c497bd18e0ec5353`](https://github.com/wizardkeith/KeEv-ledger/commit/db4c46a51fb2077247e2f4a8c497bd18e0ec5353).
+- Merge parents are `b625babd46e691d210ba09cd059eff54a099949d` (newer main) and `58053d2db07e937d22d0ea10bed4ff74fb146229` (tested candidate). Both histories and the current main state blob were preserved; no force update, rewrite or duplicate merge was used. Comparing tested candidate to merge showed only PROJECT_STATE.md differences, so the six reviewed implementation/test/CI files are unchanged.
+- Exact merged-main push [CI run 40119808199](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40119808199), head `db4c46a51fb2077247e2f4a8c497bd18e0ec5353`, first attempt: **completed / SUCCESS**. All three jobs passed; no listed verification gate failed or was skipped. Fresh terminal job logs establish:
+
+| Gate on exact merged main | Actual outcome |
+| --- | --- |
+| Python source-guard regressions | **4 passed** |
+| Backend Node suite | **63 passed, 0 failed, 0 skipped** |
+| Phase 9/10/11 source guards and secret scan | **PASS (static scope)** |
+| Locked dependencies, localization and build_runner | **PASS** |
+| Dart format | **176 files, zero changes** |
+| Flutter analyze | **No issues found** |
+| Flutter test | **289 passed** |
+| Android development debug | **PASS — app-development-debug.apk built** |
+| iOS production-flavor release-mode unsigned compile | **PASS — Runner.app built, 72.7 MB reported** |
+
+- Actual pinned toolchain in merge logs: Flutter **3.47.5**, framework `6a19cca56475dbfba1478ee68d7bd0c2ef891da1`, Dart **3.13.4**; Apple tools **Xcode 26.6 (17F113), iOS SDK 26.5, CocoaPods 1.17.0**. Native logs explicitly say code signing disabled. Purchases, ads and tracking remain false in the example defines; production service/product/legal settings remain blank.
+- The merged changes are the previously reviewed self-check guard corrections/regressions, omitted-check CI coverage, unsigned iOS lane, evidence note and nullable-registrar Swift repair. No new feature, core ledger/FX/local-first logic, dependency/migration definition, production signing, store publication, credential or account/security setting change was made in this merge task.
+- Remote PR state/main/parents were read back after successful merge; the cloud main checkout was fast-forwarded normally and was clean at the exact merge. This single canonical receipt changes documentation only and preserves prior checkpoints. Its final commit SHA, content readback and separate automatic CI status are supplied in the closing PR/parent handoff; no additional receipt commits are needed to restate that documentation CI result.
+- Remaining acceptance is unchanged: signed iOS RC/Apple team/bundle/provisioning/capabilities; actual device/plugin/lifecycle/accessibility and aggregate vendor privacy review; Android 16/16 KB device checks; live authentication/backend/deletion/purchase/ads acceptance; owner legal/store/signing and release operations in [RELEASE_BLOCKERS.md](docs/RELEASE_BLOCKERS.md). These were **not run or granted** by compile/mock CI. The workflow does not retain downloadable native build artifacts. Historical unsigned Android AAB/release-lint/322-event evidence is not regenerated by this merge.
+- Merge/CI task has no active blocker. Next action belongs to the parent's coordination of the owner's next authorized acceptance work. KeEv-games, Wix and unsynchronized owner-local folders were untouched.
