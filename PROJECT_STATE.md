@@ -1,6 +1,6 @@
 # KeEv Ledger — Project state
 
-Last updated: **2026-10-24T01:32:07+08:00** (Asia/Hong_Kong).
+Last updated: **2026-10-24T16:32:12+08:00** (Asia/Hong_Kong).
 
 ## Canonical sources
 
@@ -8,7 +8,7 @@ Last updated: **2026-10-24T01:32:07+08:00** (Asia/Hong_Kong).
 - Shared status: this file on `main`. Read its current remote version before answering progress questions.
 - Source baseline: `KeEv_Ledger_Phase_11_Native_Build_Fix_Gate_Complete.tar.xz`, delivered 25 September 2026 HKT.
 - Current phase: **Phase 11 Native Build Fix Gate Complete**. No Phase 12 implementation was performed by this import.
-- Current work: initial source recovery and GitHub synchronization completed on `main`. No new Evana/Codex Cloud task has been configured by this repository import.
+- Current work: authorized formatting-only recovery is in progress on `codex/ledger-format-gate-20261024`, draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1). Application changes are unmerged; this main-branch record is documentation only.
 
 ## Completed GitHub synchronization
 
@@ -71,3 +71,12 @@ Report the last verified update time. Local-only changes and unreachable tasks m
 - Local live-task listing did not return and was stopped; live task state remains unverified. The local findings are attributed to the parent-provided executor receipt, not a fresh inspection from this cloud checkout. Absolute personal paths are intentionally omitted.
 - This closing update changes only `PROJECT_STATE.md`. Documentation diff/whitespace checks and normal remote push/readback are performed; no application code, assets, builds/tests, Site/Wix publication, settings or local Unity work are changed. Prior product, acceptance and release limitations remain in force.
 - Next: parent reads back this closing documentation SHA and current update time; future application work follows the owner's explicit task and must preserve unsynchronized local work.
+
+## Formatting gate recovery in progress — 2026-10-24T16:32:12+08:00
+
+- Live main was fetched and verified at `26b1091d427da843c52d3a1b0689cf518b72d3f0`; clean isolated cloud checkout at `/workspace/KeEv-ledger`. KeEv-games and the owner's offline/local computer were not modified.
+- Work branch: [codex/ledger-format-gate-20261024](https://github.com/wizardkeith/KeEv-ledger/tree/codex/ledger-format-gate-20261024); draft [PR #1](https://github.com/wizardkeith/KeEv-ledger/pull/1). Bootstrap commit `e194fc6f4c27d9ed05e55eb07a036e897a1e1384` adds only a temporary formatter recovery workflow, to be removed from the final diff.
+- Tooling: official Flutter 3.47.5 source pin `6a19cca56475dbfba1478ee68d7bd0c2ef891da1` cloned locally. Dart SDK bootstrap failed with proxy CONNECT 403; no restriction bypass attempted. Connected GitHub app access succeeds; shell GH_TOKEN is invalid. Hosted Actions is the chosen pinned-toolchain execution path.
+- [Recovery run 40078328539](https://github.com/wizardkeith/KeEv-ledger/actions/runs/40078328539) is in progress: pinned SDK, locked dependencies and localization passed; code generation is running. Formatting/token preservation, analyze, tests and Android are not yet verified for the correction.
+- Confirmed [prior run 39995907847](https://github.com/wizardkeith/KeEv-ledger/actions/runs/39995907847) failed formatting (21 of 176 files); analyze/test/Android skipped. Historical 322-test/unsigned RC results remain historical.
+- Next: retrieve official formatter patch, review semantic preservation, remove recovery workflow, commit/push formatting only, follow the retained quality gate to terminal, then update this canonical record with final SHA and actual outcomes. No merge, Phase 12, product behavior, signing, stores, credentials or security changes.
